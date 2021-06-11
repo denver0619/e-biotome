@@ -7,3 +7,6 @@ class StringContent {
 
   StringContent({this.source, this.tilepath, this.tiletitle});
 }
+
+List<StringContent> textSource = [];
+List<StringContent> resultList = [];
