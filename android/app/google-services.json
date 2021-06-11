@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "775701243234",
+    "project_id": "e-biotome-for-general-biology",
+    "storage_bucket": "e-biotome-for-general-biology.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:775701243234:android:cf3698d0ae55ff6f76b83b",
+        "android_client_info": {
+          "package_name": "com.example.e_biotome_for_general_biology"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "775701243234-b5fv2ovk7p8i3bf53m3cbtbt5b8cncgi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.e_biotome_for_general_biology",
+            "certificate_hash": "ce394f326181610f30fc50ec96f8e5d63577ddb1"
+          }
+        },
+        {
+          "client_id": "775701243234-gf3n34cf9ktl667utl5j81kpq90eotf8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL0rhUgOWauUnrbZt8ZaQMMEY4EcOEvEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "775701243234-gf3n34cf9ktl667utl5j81kpq90eotf8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
