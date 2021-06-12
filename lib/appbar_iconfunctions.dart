@@ -227,22 +227,22 @@ class SearchResultsListView extends StatelessWidget {
           children: [Icon(Icons.search, size: 64), Text('Start Searching')],
         ),
       );
+    } else if (searchTerm.isNotEmpty) {
+      return ListView(
+          children: resultList
+              .map((result) => ListTile(
+                  title: Text('${result.tiletitle}'),
+                  onTap: () {
+                    Navigator.pushNamed(context, '${result.tilepath}');
+                  }))
+              .toList());
     }
 
-    return ListView(
-      children: resultList
-          .map((result) => ListTile(
-              title: Text('${result.tiletitle}'),
-              onTap: () {
-                Navigator.pushNamed(context, '${result.tilepath}');
-              }))
-          .toList(),
-      // children: List.generate(
-      //     50,
-      //     (index) => ListTile(
-      //           title: Text('$searchTerm search result'),
-      //           subtitle: Text(index.toString()),
-      //         )),
-    );
+    // children: List.generate(
+    //     50,
+    //     (index) => ListTile(
+    //           title: Text('$searchTerm search result'),
+    //           subtitle: Text(index.toString()),
+    //         )),
   }
 }
