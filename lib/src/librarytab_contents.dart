@@ -24,6 +24,8 @@ class _LibraryTabState extends State<LibraryTab> {
         IconButton(
           onPressed: () {
             Navigator.pushNamed(context, '/searchbar');
+            selectedTerm = null;
+            resultClear();
           },
           icon: Icon(Icons.search_outlined),
           color: Color(mediumBlue),

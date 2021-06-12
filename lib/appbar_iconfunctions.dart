@@ -122,6 +122,7 @@ class _SearchBarState extends State<SearchBar> {
           setState(() {
             addSearchTerm(query);
             selectedTerm = query;
+            resultSearchReset(query);
           });
           controller.close();
         },
@@ -229,12 +230,19 @@ class SearchResultsListView extends StatelessWidget {
     }
 
     return ListView(
-      children: List.generate(
-          50,
-          (index) => ListTile(
-                title: Text('$searchTerm search result'),
-                subtitle: Text(index.toString()),
-              )),
+      children: resultList
+          .map((result) => ListTile(
+              title: Text('${result.tiletitle}'),
+              onTap: () {
+                Navigator.pushNamed(context, '${result.tilepath}');
+              }))
+          .toList(),
+      // children: List.generate(
+      //     50,
+      //     (index) => ListTile(
+      //           title: Text('$searchTerm search result'),
+      //           subtitle: Text(index.toString()),
+      //         )),
     );
   }
 }
