@@ -8,7 +8,8 @@ List<String> _searchHistory = [];
 List<String> filteredSearchHistory;
 //displays the results from selected term in search history
 String selectedTerm;
-// functions that returns a list of filtered results
+
+// function that returns a list of filtered results
 List<String> filterSearchTerms({
   @required String filter,
 }) {
@@ -121,6 +122,7 @@ class _SearchBarState extends State<SearchBar> {
           setState(() {
             addSearchTerm(query);
             selectedTerm = query;
+            resultSearchReset(query);
           });
           controller.close();
         },
@@ -225,15 +227,22 @@ class SearchResultsListView extends StatelessWidget {
           children: [Icon(Icons.search, size: 64), Text('Start Searching')],
         ),
       );
+    } else if (searchTerm.isNotEmpty) {
+      return ListView(
+          children: resultList
+              .map((result) => ListTile(
+                  title: Text('${result.tiletitle}'),
+                  onTap: () {
+                    Navigator.pushNamed(context, '${result.tilepath}');
+                  }))
+              .toList());
     }
 
-    return ListView(
-      children: List.generate(
-          50,
-          (index) => ListTile(
-                title: Text('$searchTerm search result'),
-                subtitle: Text(index.toString()),
-              )),
-    );
+    // children: List.generate(
+    //     50,
+    //     (index) => ListTile(
+    //           title: Text('$searchTerm search result'),
+    //           subtitle: Text(index.toString()),
+    //         )),
   }
 }
