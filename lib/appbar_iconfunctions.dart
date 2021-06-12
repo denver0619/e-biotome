@@ -8,7 +8,8 @@ List<String> _searchHistory = [];
 List<String> filteredSearchHistory;
 //displays the results from selected term in search history
 String selectedTerm;
-// functions that returns a list of filtered results
+
+// function that returns a list of filtered results
 List<String> filterSearchTerms({
   @required String filter,
 }) {
