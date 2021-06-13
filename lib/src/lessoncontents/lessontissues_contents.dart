@@ -11,10 +11,8 @@ class _Tissues1State extends State<Tissues1> {
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
-    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
-    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
-    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
-    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues4'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues5'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -60,10 +58,8 @@ class _Tissues2State extends State<Tissues2> {
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
-    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
-    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
-    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
-    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues4'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues5'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -109,10 +105,8 @@ class _Tissues3State extends State<Tissues3> {
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
-    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
-    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
-    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
-    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues4'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues5'),
   ];
   @override
   Widget build(BuildContext context) {
@@ -158,16 +152,14 @@ class _Tissues4State extends State<Tissues4> {
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
-    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
-    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
-    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
-    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues4'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues5'),
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Types of Connective Tissues'),
+          title: Text('Muscle Tissues'),
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
@@ -207,108 +199,8 @@ class _Tissues5State extends State<Tissues5> {
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
-    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
-    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
-    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
-    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Muscle Tissues'),
-          backgroundColor: Color(darkBlue),
-        ),
-        drawer: Drawer(
-          child: Column(
-            children: [
-              DrawerHeader(
-                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
-              ),
-              Expanded(
-                child: ListView(
-                    children: tilesheets
-                        .map((tilesheet) => ListTile(
-                            title: Text('${tilesheet.title}',
-                                style: drawerTileStyle),
-                            onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
-                            }))
-                        .toList()),
-              ),
-            ],
-          ),
-        ),
-        body: Column(
-          children: [Text('Dito Yung mga Content')],
-        ));
-  }
-}
-
-class Tissues6 extends StatefulWidget {
-  static String route = '/tissues6';
-  @override
-  _Tissues6State createState() => _Tissues6State();
-}
-
-class _Tissues6State extends State<Tissues6> {
-  List<CardSheet> tilesheets = [
-    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
-    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
-    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
-    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
-    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
-    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
-    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Types of Muscle Tissues'),
-          backgroundColor: Color(darkBlue),
-        ),
-        drawer: Drawer(
-          child: Column(
-            children: [
-              DrawerHeader(
-                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
-              ),
-              Expanded(
-                child: ListView(
-                    children: tilesheets
-                        .map((tilesheet) => ListTile(
-                            title: Text('${tilesheet.title}',
-                                style: drawerTileStyle),
-                            onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
-                            }))
-                        .toList()),
-              ),
-            ],
-          ),
-        ),
-        body: Column(
-          children: [Text('Dito Yung mga Content')],
-        ));
-  }
-}
-
-class Tissues7 extends StatefulWidget {
-  static String route = '/tissues7';
-  @override
-  _Tissues7State createState() => _Tissues7State();
-}
-
-class _Tissues7State extends State<Tissues7> {
-  List<CardSheet> tilesheets = [
-    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
-    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
-    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
-    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
-    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
-    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
-    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues4'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues5'),
   ];
   @override
   Widget build(BuildContext context) {
