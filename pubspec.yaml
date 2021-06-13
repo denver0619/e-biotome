@@ -45,6 +45,7 @@ flutter:
   assets:
     - assets/PNGS/
     - assets/PNGS/CELL/
+    - assets/PNGS/TISSUE/
 
   fonts:
     - family: LuckiestGuy

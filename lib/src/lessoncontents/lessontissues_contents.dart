@@ -41,11 +41,27 @@ class _Tissues1State extends State<Tissues1> {
             ],
           ),
         ),
-        body: Column(
-          children: [Text('Dito Yung mga Content')],
+        body: Padding(
+          padding: paragraphPadding,
+          child: Column(
+            children: [
+              Expanded(
+                  child: ListView(
+                children: [
+                  newLine,
+                  SelectableText.rich(TextSpan(children: [
+                    TextSpan(text: '', style: pharagraphDefaultStyle),
+                    TextSpan(text: '', style: pharagraphBoldStyle),
+                  ])),
+                ],
+              ))
+            ],
+          ),
         ));
   }
 }
+// TextSpan(text: '', style: pharagraphDefaultStyle),
+// TextSpan(text: '', style: pharagraphBoldStyle),
 
 class Tissues2 extends StatefulWidget {
   static String route = '/tissues2';
@@ -88,8 +104,22 @@ class _Tissues2State extends State<Tissues2> {
             ],
           ),
         ),
-        body: Column(
-          children: [Text('Dito Yung mga Content')],
+        body: Padding(
+          padding: paragraphPadding,
+          child: Column(
+            children: [
+              Expanded(
+                  child: ListView(
+                children: [
+                  newLine,
+                  SelectableText.rich(TextSpan(children: [
+                    TextSpan(text: '', style: pharagraphDefaultStyle),
+                    TextSpan(text: '', style: pharagraphBoldStyle),
+                  ])),
+                ],
+              ))
+            ],
+          ),
         ));
   }
 }
@@ -135,8 +165,22 @@ class _Tissues3State extends State<Tissues3> {
             ],
           ),
         ),
-        body: Column(
-          children: [Text('Dito Yung mga Content')],
+        body: Padding(
+          padding: paragraphPadding,
+          child: Column(
+            children: [
+              Expanded(
+                  child: ListView(
+                children: [
+                  newLine,
+                  SelectableText.rich(TextSpan(children: [
+                    TextSpan(text: '', style: pharagraphDefaultStyle),
+                    TextSpan(text: '', style: pharagraphBoldStyle),
+                  ])),
+                ],
+              ))
+            ],
+          ),
         ));
   }
 }
@@ -182,8 +226,22 @@ class _Tissues4State extends State<Tissues4> {
             ],
           ),
         ),
-        body: Column(
-          children: [Text('Dito Yung mga Content')],
+        body: Padding(
+          padding: paragraphPadding,
+          child: Column(
+            children: [
+              Expanded(
+                  child: ListView(
+                children: [
+                  newLine,
+                  SelectableText.rich(TextSpan(children: [
+                    TextSpan(text: '', style: pharagraphDefaultStyle),
+                    TextSpan(text: '', style: pharagraphBoldStyle),
+                  ])),
+                ],
+              ))
+            ],
+          ),
         ));
   }
 }
@@ -229,8 +287,22 @@ class _Tissues5State extends State<Tissues5> {
             ],
           ),
         ),
-        body: Column(
-          children: [Text('Dito Yung mga Content')],
+        body: Padding(
+          padding: paragraphPadding,
+          child: Column(
+            children: [
+              Expanded(
+                  child: ListView(
+                children: [
+                  newLine,
+                  SelectableText.rich(TextSpan(children: [
+                    TextSpan(text: '', style: pharagraphDefaultStyle),
+                    TextSpan(text: '', style: pharagraphBoldStyle),
+                  ])),
+                ],
+              ))
+            ],
+          ),
         ));
   }
 }

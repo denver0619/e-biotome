@@ -8,7 +8,7 @@ const clear = 0x00000000;
 
 //for text in pharagraph layout
 
-final paragraphPadding = EdgeInsets.fromLTRB(10, 10, 10, 0);
+final paragraphPadding = EdgeInsets.fromLTRB(10, 0, 10, 0);
 
 final pharagraphDefaultStyle =
     TextStyle(fontFamily: 'CenturyGothic', color: Color(black), fontSize: 15);

@@ -65,6 +65,7 @@ class _Cells1State extends State<Cells1> {
             child: Padding(
           padding: paragraphPadding,
           child: ListView(children: [
+            newLine,
             SelectableText.rich(
               TextSpan(
                 text: '$indent' +
@@ -171,6 +172,7 @@ class _Cells2State extends State<Cells2> {
                 Expanded(
                     child: ListView(
                   children: [
+                    newLine,
                     SelectableText.rich(
                       TextSpan(children: <TextSpan>[
                         TextSpan(
@@ -350,12 +352,13 @@ class _Cells4State extends State<Cells4> {
           ),
         ),
         body: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: paragraphPadding,
             child: Column(
               children: [
                 Expanded(
                     child: ListView(
                   children: [
+                    newLine,
                     Center(
                       child: SelectableText.rich(
                         TextSpan(
@@ -653,12 +656,13 @@ class _Cells5State extends State<Cells5> {
           ),
         ),
         body: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: paragraphPadding,
             child: Column(
               children: [
                 Expanded(
                     child: ListView(
                   children: [
+                    newLine,
                     SelectableText.rich(
                       TextSpan(children: <TextSpan>[
                         TextSpan(
@@ -856,7 +860,3 @@ class _Cells5State extends State<Cells5> {
             )));
   }
 }
-
-
-// TextSpan(text: '', style: pharagraphDefaultStyle),
-// TextSpan(text: '', style: pharagraphBoldStyle),
