@@ -7,6 +7,15 @@ class Tissues1 extends StatefulWidget {
 }
 
 class _Tissues1State extends State<Tissues1> {
+  List<CardSheet> cardsheets = [
+    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
+    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
+    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
+    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
+    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -37,6 +46,15 @@ class Tissues2 extends StatefulWidget {
 }
 
 class _Tissues2State extends State<Tissues2> {
+  List<CardSheet> cardsheets = [
+    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
+    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
+    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
+    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
+    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,6 +85,15 @@ class Tissues3 extends StatefulWidget {
 }
 
 class _Tissues3State extends State<Tissues3> {
+  List<CardSheet> cardsheets = [
+    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
+    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
+    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
+    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
+    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,6 +124,15 @@ class Tissues4 extends StatefulWidget {
 }
 
 class _Tissues4State extends State<Tissues4> {
+  List<CardSheet> cardsheets = [
+    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
+    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
+    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
+    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
+    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -127,6 +163,15 @@ class Tissues5 extends StatefulWidget {
 }
 
 class _Tissues5State extends State<Tissues5> {
+  List<CardSheet> cardsheets = [
+    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
+    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
+    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
+    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
+    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -157,6 +202,15 @@ class Tissues6 extends StatefulWidget {
 }
 
 class _Tissues6State extends State<Tissues6> {
+  List<CardSheet> cardsheets = [
+    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
+    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
+    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
+    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
+    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -187,6 +241,15 @@ class Tissues7 extends StatefulWidget {
 }
 
 class _Tissues7State extends State<Tissues7> {
+  List<CardSheet> cardsheets = [
+    CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
+    CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
+    CardSheet(title: 'Connective Tissues', path: '/tissues3'),
+    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
+    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
