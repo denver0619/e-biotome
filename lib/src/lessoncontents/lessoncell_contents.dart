@@ -629,7 +629,7 @@ class _Cells5State extends State<Cells5> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Prokaryote and Eukaryote Cells'),
+          title: Text('Prokaryotic and Eukaryotic Cells'),
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
