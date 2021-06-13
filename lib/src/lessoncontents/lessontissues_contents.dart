@@ -7,7 +7,7 @@ class Tissues1 extends StatefulWidget {
 }
 
 class _Tissues1State extends State<Tissues1> {
-  List<CardSheet> cardsheets = [
+  List<CardSheet> tilesheets = [
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
@@ -24,12 +24,22 @@ class _Tissues1State extends State<Tissues1> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Tissues'),
+                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -46,7 +56,7 @@ class Tissues2 extends StatefulWidget {
 }
 
 class _Tissues2State extends State<Tissues2> {
-  List<CardSheet> cardsheets = [
+  List<CardSheet> tilesheets = [
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
@@ -63,12 +73,22 @@ class _Tissues2State extends State<Tissues2> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Tissues'),
+                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -85,7 +105,7 @@ class Tissues3 extends StatefulWidget {
 }
 
 class _Tissues3State extends State<Tissues3> {
-  List<CardSheet> cardsheets = [
+  List<CardSheet> tilesheets = [
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
@@ -102,12 +122,22 @@ class _Tissues3State extends State<Tissues3> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Tissues'),
+                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -124,7 +154,7 @@ class Tissues4 extends StatefulWidget {
 }
 
 class _Tissues4State extends State<Tissues4> {
-  List<CardSheet> cardsheets = [
+  List<CardSheet> tilesheets = [
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
@@ -141,12 +171,22 @@ class _Tissues4State extends State<Tissues4> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Tissues'),
+                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -163,7 +203,7 @@ class Tissues5 extends StatefulWidget {
 }
 
 class _Tissues5State extends State<Tissues5> {
-  List<CardSheet> cardsheets = [
+  List<CardSheet> tilesheets = [
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
@@ -180,12 +220,22 @@ class _Tissues5State extends State<Tissues5> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Tissues'),
+                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -202,7 +252,7 @@ class Tissues6 extends StatefulWidget {
 }
 
 class _Tissues6State extends State<Tissues6> {
-  List<CardSheet> cardsheets = [
+  List<CardSheet> tilesheets = [
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
@@ -219,12 +269,22 @@ class _Tissues6State extends State<Tissues6> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Tissues'),
+                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -241,7 +301,7 @@ class Tissues7 extends StatefulWidget {
 }
 
 class _Tissues7State extends State<Tissues7> {
-  List<CardSheet> cardsheets = [
+  List<CardSheet> tilesheets = [
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
@@ -258,12 +318,22 @@ class _Tissues7State extends State<Tissues7> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Tissues'),
+                child: Center(child: Text('Tissues', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
