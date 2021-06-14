@@ -22,8 +22,6 @@ getRoutes() {
     Tissues3.route: (context) => Tissues3(),
     Tissues4.route: (context) => Tissues4(),
     Tissues5.route: (context) => Tissues5(),
-    Tissues6.route: (context) => Tissues6(),
-    Tissues7.route: (context) => Tissues7(),
     CellCycle1.route: (context) => CellCycle1(),
     CellCycle2.route: (context) => CellCycle2(),
     CellCycle3.route: (context) => CellCycle3(),
