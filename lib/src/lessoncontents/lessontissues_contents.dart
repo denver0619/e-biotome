@@ -235,7 +235,7 @@ class _Tissues2State extends State<Tissues2> {
                       child: Stack(fit: StackFit.passthrough, children: [
                     Image(
                       image: AssetImage(
-                          'assets/PNGS/TISSUE/Stratified squamus.png'),
+                          'assets/PNGS/TISSUE/Stratified squamous.png'),
                     )
                   ])),
                   newLine,

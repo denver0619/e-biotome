@@ -34,32 +34,25 @@ class _Cells1State extends State<Cells1> {
         backgroundColor: Color(darkBlue),
       ),
       drawer: Drawer(
-        child: Column(
-          children: [
-            DrawerHeader(
-              child: Center(child: Text('Cells', style: drawerHeaderStyle)),
-            ),
-            Expanded(
-              child: ListView(
-                  children: tilesheets
-                      .map((tilesheet) => ListView(children: [
-                            ListTile(
-                                title: Text('${tilesheet.title}',
-                                    style: drawerTileStyle),
-                                onTap: () {
-                                  Navigator.pushNamed(
-                                      context, '${tilesheet.path}');
-                                }),
-                            Divider(
-                              height: 4,
-                              thickness: 0.0,
-                            )
-                          ]))
-                      .toList()),
-            ),
-          ],
+          child: Column(
+            children: [
+              DrawerHeader(
+                child: Center(child: Text('Cells', style: drawerHeaderStyle)),
+              ),
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
+            ],
+          ),
         ),
-      ),
       body: Column(children: [
         Expanded(
             child: Padding(
