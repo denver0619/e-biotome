@@ -7,6 +7,12 @@ class CellCycle1 extends StatefulWidget {
 }
 
 class _CellCycle1State extends State<CellCycle1> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'The Cell Cycle: Introduction', path: '/cellcycle1'),
+    CardSheet(title: 'Mitosis', path: '/cellcycle2'),
+    CardSheet(title: 'Meiosis', path: '/cellcycle3'),
+    CardSheet(title: 'More about Cell Cycle', path: '/cellcycle4'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,12 +21,23 @@ class _CellCycle1State extends State<CellCycle1> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Cell Cycle'),
+                child:
+                    Center(child: Text('Cell Cycle', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -37,6 +54,12 @@ class CellCycle2 extends StatefulWidget {
 }
 
 class _CellCycle2State extends State<CellCycle2> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'The Cell Cycle: Introduction', path: '/cellcycle1'),
+    CardSheet(title: 'Mitosis', path: '/cellcycle2'),
+    CardSheet(title: 'Meiosis', path: '/cellcycle3'),
+    CardSheet(title: 'More about Cell Cycle', path: '/cellcycle4'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,12 +68,23 @@ class _CellCycle2State extends State<CellCycle2> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Cell Cycle'),
+                child:
+                    Center(child: Text('Cell Cycle', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -67,6 +101,12 @@ class CellCycle3 extends StatefulWidget {
 }
 
 class _CellCycle3State extends State<CellCycle3> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'The Cell Cycle: Introduction', path: '/cellcycle1'),
+    CardSheet(title: 'Mitosis', path: '/cellcycle2'),
+    CardSheet(title: 'Meiosis', path: '/cellcycle3'),
+    CardSheet(title: 'More about Cell Cycle', path: '/cellcycle4'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,12 +115,23 @@ class _CellCycle3State extends State<CellCycle3> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Cell Cycle'),
+                child:
+                    Center(child: Text('Cell Cycle', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -97,6 +148,12 @@ class CellCycle4 extends StatefulWidget {
 }
 
 class _CellCycle4State extends State<CellCycle4> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'The Cell Cycle: Introduction', path: '/cellcycle1'),
+    CardSheet(title: 'Mitosis', path: '/cellcycle2'),
+    CardSheet(title: 'Meiosis', path: '/cellcycle3'),
+    CardSheet(title: 'More about Cell Cycle', path: '/cellcycle4'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -105,12 +162,23 @@ class _CellCycle4State extends State<CellCycle4> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Cell Cycle'),
+                child:
+                    Center(child: Text('Cell Cycle', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
