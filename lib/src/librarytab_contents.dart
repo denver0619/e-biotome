@@ -39,12 +39,16 @@ class _LibraryTabState extends State<LibraryTab> {
         )
       ],
       elevation: 0,
-      leading: Card(
-        elevation: 1,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        child: Stack(children: [
-          Ink.image(image: AssetImage('assets/PNGS/LOGO_ICON.png')),
-        ]),
+      leading: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Card(
+          elevation: 1,
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+          child: Stack(children: [
+            Ink.image(image: AssetImage('assets/PNGS/LOGO_ICON.png')),
+          ]),
+        ),
       ),
     );
 
