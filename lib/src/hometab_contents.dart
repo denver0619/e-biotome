@@ -47,7 +47,7 @@ class _HomeTabState extends State<HomeTab> {
     final appBarHeight = appBar.preferredSize.height;
     final statusBarHeight = MediaQuery.of(context).padding.top;
     final bodyHeight = screenHeight - appBarHeight - statusBarHeight;
-    final columnSidePadding = screenWidth * 0.1;
+    final columnSidePadding = screenWidth * 0.15;
     return Scaffold(
       appBar: appBar,
       body: Container(
