@@ -85,10 +85,8 @@ class _TissuesLessonState extends State<TissuesLesson> {
     CardSheet(title: 'Epithelial Tissues', path: '/tissues1'),
     CardSheet(title: 'Types of Epithelial Tissues', path: '/tissues2'),
     CardSheet(title: 'Connective Tissues', path: '/tissues3'),
-    CardSheet(title: 'Types of Connective Tissues', path: '/tissues4'),
-    CardSheet(title: 'Muscle Tissues', path: '/tissues5'),
-    CardSheet(title: 'Types of Muscle Tissues', path: '/tissues6'),
-    CardSheet(title: 'Nervous Tissues', path: '/tissues7'),
+    CardSheet(title: 'Muscle Tissues', path: '/tissues4'),
+    CardSheet(title: 'Nervous Tissues', path: '/tissues5'),
   ];
   @override
   Widget build(BuildContext context) {

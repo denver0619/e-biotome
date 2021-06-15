@@ -34,37 +34,31 @@ class _Cells1State extends State<Cells1> {
         backgroundColor: Color(darkBlue),
       ),
       drawer: Drawer(
-        child: Column(
-          children: [
-            DrawerHeader(
-              child: Center(child: Text('Cells', style: drawerHeaderStyle)),
-            ),
-            Expanded(
-              child: ListView(
-                  children: tilesheets
-                      .map((tilesheet) => ListView(children: [
-                            ListTile(
-                                title: Text('${tilesheet.title}',
-                                    style: drawerTileStyle),
-                                onTap: () {
-                                  Navigator.pushNamed(
-                                      context, '${tilesheet.path}');
-                                }),
-                            Divider(
-                              height: 4,
-                              thickness: 0.0,
-                            )
-                          ]))
-                      .toList()),
-            ),
-          ],
+          child: Column(
+            children: [
+              DrawerHeader(
+                child: Center(child: Text('Cells', style: drawerHeaderStyle)),
+              ),
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
+            ],
+          ),
         ),
-      ),
       body: Column(children: [
         Expanded(
             child: Padding(
           padding: paragraphPadding,
           child: ListView(children: [
+            newLine,
             SelectableText.rich(
               TextSpan(
                 text: '$indent' +
@@ -171,6 +165,7 @@ class _Cells2State extends State<Cells2> {
                 Expanded(
                     child: ListView(
                   children: [
+                    newLine,
                     SelectableText.rich(
                       TextSpan(children: <TextSpan>[
                         TextSpan(
@@ -350,12 +345,13 @@ class _Cells4State extends State<Cells4> {
           ),
         ),
         body: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: paragraphPadding,
             child: Column(
               children: [
                 Expanded(
                     child: ListView(
                   children: [
+                    newLine,
                     Center(
                       child: SelectableText.rich(
                         TextSpan(
@@ -629,7 +625,7 @@ class _Cells5State extends State<Cells5> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Prokaryote and Eukaryote Cells'),
+          title: Text('Prokaryotic and Eukaryotic Cells'),
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
@@ -653,12 +649,13 @@ class _Cells5State extends State<Cells5> {
           ),
         ),
         body: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: paragraphPadding,
             child: Column(
               children: [
                 Expanded(
                     child: ListView(
                   children: [
+                    newLine,
                     SelectableText.rich(
                       TextSpan(children: <TextSpan>[
                         TextSpan(
@@ -856,7 +853,3 @@ class _Cells5State extends State<Cells5> {
             )));
   }
 }
-
-
-// TextSpan(text: '', style: pharagraphDefaultStyle),
-// TextSpan(text: '', style: pharagraphBoldStyle),
