@@ -63,10 +63,20 @@ class _HomeTabState extends State<HomeTab> {
         )),
         child: Padding(
           padding: EdgeInsets.fromLTRB(
-              columnSidePadding, bodyHeight * 0.55, columnSidePadding, 0),
+              columnSidePadding, bodyHeight * 0.45, columnSidePadding, 0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              Text(''),
+              Text(
+                'WELCOME TO E-BIOTOME!',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontFamily: 'LuckiestGuy', fontSize: 25),
+              ),
+              Text('Discover more about Biology by reading these daily trivia.',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontFamily: 'CenturyGothic')),
+              Text(''),
               Expanded(
                 child: GridView.count(
                   crossAxisCount: 2,
