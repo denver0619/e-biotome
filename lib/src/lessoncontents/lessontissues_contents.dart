@@ -839,5 +839,3 @@ class _Tissues5State extends State<Tissues5> {
         ));
   }
 }
-// TextSpan(text: '', style: pharagraphDefaultStyle),
-// TextSpan(text: '', style: pharagraphBoldStyle),
