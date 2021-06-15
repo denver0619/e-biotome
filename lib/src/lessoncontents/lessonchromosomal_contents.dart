@@ -7,6 +7,10 @@ class Chromosomal1 extends StatefulWidget {
 }
 
 class _Chromosomal1State extends State<Chromosomal1> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'Errors in Mitosis', path: '/chromosomal1'),
+    CardSheet(title: 'Chromosomal Abnormalities', path: '/chromosomal2'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,12 +19,24 @@ class _Chromosomal1State extends State<Chromosomal1> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Chromosomal Abnormalities'),
+                child: Center(
+                    child: Text('Chromosomal Abnormalities',
+                        style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -37,6 +53,10 @@ class Chromosomal2 extends StatefulWidget {
 }
 
 class _Chromosomal2State extends State<Chromosomal2> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'Errors in Mitosis', path: '/chromosomal1'),
+    CardSheet(title: 'Chromosomal Abnormalities', path: '/chromosomal2'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,12 +65,24 @@ class _Chromosomal2State extends State<Chromosomal2> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Chromosomal Abnormalities'),
+                child: Center(
+                    child: Text('Chromosomal Abnormalities',
+                        style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
