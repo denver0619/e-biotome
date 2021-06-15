@@ -71,7 +71,8 @@ class _HomeTabState extends State<HomeTab> {
               Text(
                 'WELCOME TO E-BIOTOME!',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontFamily: 'LuckiestGuy', fontSize: 25),
+                style: TextStyle(
+                    fontFamily: 'LuckiestGuy', fontSize: 25, letterSpacing: 2),
               ),
               Text('Discover more about Biology by reading these daily trivia.',
                   textAlign: TextAlign.center,
