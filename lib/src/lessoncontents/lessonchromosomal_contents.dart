@@ -550,7 +550,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [
@@ -568,6 +567,7 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
+                    newLine,
                     newLine,
                     SelectableText.rich(
                       TextSpan(
@@ -607,7 +607,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [
@@ -649,7 +648,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [
@@ -691,7 +689,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [
@@ -730,7 +727,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [
@@ -775,7 +771,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [
@@ -820,7 +815,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [
@@ -881,7 +875,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [
@@ -923,7 +916,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
                       ),
                       textAlign: TextAlign.justify,
                     ),
-                    newLine,
                     SelectableText.rich(
                       TextSpan(
                         children: [

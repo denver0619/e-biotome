@@ -22,7 +22,7 @@ final paragraphBoldStyle = TextStyle(
 final drawerHeaderStyle = TextStyle(
     fontFamily: 'LuckiestGuy',
     fontWeight: FontWeight.bold,
-    fontSize: 40,
+    fontSize: 30,
     color: Color(darkBlue),
     letterSpacing: 2);
 
