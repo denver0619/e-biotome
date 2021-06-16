@@ -935,3 +935,6 @@ class _Chromosomal2State extends State<Chromosomal2> {
         ));
   }
 }
+
+// TextSpan(text: '', style: paragraphDefaultStyle),
+// TextSpan(text: '', style: paragraphBoldStyle),
