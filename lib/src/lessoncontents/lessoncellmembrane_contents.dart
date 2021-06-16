@@ -364,11 +364,133 @@ class _CellMembrane3State extends State<CellMembrane3> {
                   SelectableText.rich(
                     TextSpan(
                       children: [
-                        TextSpan(text: '', style: paragraphDefaultStyle),
-                        TextSpan(text: '', style: paragraphBoldStyle),
+                        TextSpan(
+                            text: 'Cell Membrane Models',
+                            style: paragraphBoldStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' +
+                                '•	1925 – Model of Bimolecular Phospholipid Membrane (Evert Gorter and Francois Grendel). ',
+                            style: paragraphBoldStyle),
                       ],
                     ),
                     textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$indent' +
+                                'The cell membrane is composed of a lipid bilayer with the ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'layer facing inward',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text:
+                                ', away from the aqueous environment that surrounds the membrane, and is ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'hydrophobic ', style: paragraphBoldStyle),
+                        TextSpan(
+                            text: '(water – fearing); the other ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'layer facing outward',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text:
+                                ', toward the outside environment of the cell, and is ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'hydrophilic ', style: paragraphBoldStyle),
+                        TextSpan(
+                            text: '(water – loving).',
+                            style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' +
+                                '•	1935 – Davson – Danielli Model (Hugh Davson and James Danielli) ',
+                            style: paragraphBoldStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$indent' +
+                                'The cell membrane is described as a ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'phospholipid bilayer sandwiched ',
+                            style: paragraphBoldStyle),
+                        TextSpan(text: 'by a ', style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'coat of protein ',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text: 'on either surface.',
+                            style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' +
+                                '•	1972 - Singer – Nicolson Model or Fluid Mosaic Model (Seymour J. Singer and Garth L. Nicolson) ',
+                            style: paragraphBoldStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$indent' +
+                                'The cell membrane is a mosaic of proteins that are embedded or attached to a ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'fluid bilayer of protein',
+                            style: paragraphBoldStyle),
+                        TextSpan(text: '.', style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  Container(
+                    child: Stack(
+                      fit: StackFit.passthrough,
+                      children: [
+                        Image(
+                          image: AssetImage('assets/PNGS/CELL MEMBRANE/cm.png'),
+                        )
+                      ],
+                    ),
                   ),
                 ],
               ),
