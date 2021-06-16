@@ -51,73 +51,6 @@ class _CellMembrane1State extends State<CellMembrane1> {
                   SelectableText.rich(
                     TextSpan(
                       children: [
-                        TextSpan(text: '', style: paragraphDefaultStyle),
-                        TextSpan(text: '', style: paragraphBoldStyle),
-                      ],
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
-class CellMembrane2 extends StatefulWidget {
-  static String route = '/cellmembrane2';
-  @override
-  _CellMembrane2State createState() => _CellMembrane2State();
-}
-
-class _CellMembrane2State extends State<CellMembrane2> {
-  List<CardSheet> tilesheets = [
-    CardSheet(title: 'The Cell Membrane', path: '/cellmembrane1'),
-    CardSheet(title: 'Cell Membrane Models', path: '/cellmembrane2'),
-    CardSheet(title: 'Components and their Functions', path: '/cellmembrane3'),
-  ];
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Cell Membrane Models'),
-        backgroundColor: Color(darkBlue),
-      ),
-      drawer: Drawer(
-        child: Column(
-          children: [
-            DrawerHeader(
-              child: Center(
-                  child: Text('The Cell Membrane', style: drawerHeaderStyle)),
-            ),
-            Expanded(
-              child: ListView(
-                  children: tilesheets
-                      .map((tilesheet) => ListTile(
-                          title: Text('${tilesheet.title}',
-                              style: drawerTileStyle),
-                          onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
-                          }))
-                      .toList()),
-            ),
-          ],
-        ),
-      ),
-      body: Padding(
-        padding: paragraphPadding,
-        child: Column(
-          children: [
-            Expanded(
-              child: ListView(
-                children: [
-                  newLine,
-                  SelectableText.rich(
-                    TextSpan(
-                      children: [
                         TextSpan(
                             text: 'The Cell Membrane',
                             style: paragraphBoldStyle),
@@ -313,6 +246,195 @@ class _CellMembrane2State extends State<CellMembrane2> {
   }
 }
 
+class CellMembrane2 extends StatefulWidget {
+  static String route = '/cellmembrane2';
+  @override
+  _CellMembrane2State createState() => _CellMembrane2State();
+}
+
+class _CellMembrane2State extends State<CellMembrane2> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'The Cell Membrane', path: '/cellmembrane1'),
+    CardSheet(title: 'Cell Membrane Models', path: '/cellmembrane2'),
+    CardSheet(title: 'Components and their Functions', path: '/cellmembrane3'),
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Cell Membrane Models'),
+        backgroundColor: Color(darkBlue),
+      ),
+      drawer: Drawer(
+        child: Column(
+          children: [
+            DrawerHeader(
+              child: Center(
+                  child: Text('The Cell Membrane', style: drawerHeaderStyle)),
+            ),
+            Expanded(
+              child: ListView(
+                  children: tilesheets
+                      .map((tilesheet) => ListTile(
+                          title: Text('${tilesheet.title}',
+                              style: drawerTileStyle),
+                          onTap: () {
+                            Navigator.pushNamed(context, '${tilesheet.path}');
+                          }))
+                      .toList()),
+            ),
+          ],
+        ),
+      ),
+      body: Padding(
+        padding: paragraphPadding,
+        child: Column(
+          children: [
+            Expanded(
+              child: ListView(
+                children: [
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: 'Cell Membrane Models',
+                            style: paragraphBoldStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' +
+                                '1925 – Model of Bimolecular Phospholipid Membrane (Evert Gorter and Francois Grendel). ',
+                            style: paragraphBoldStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$indent' +
+                                'The cell membrane is composed of a lipid bilayer with the ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'layer facing inward',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text:
+                                ', away from the aqueous environment that surrounds the membrane, and is ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'hydrophobic ', style: paragraphBoldStyle),
+                        TextSpan(
+                            text: '(water – fearing); the other ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'layer facing outward',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text:
+                                ', toward the outside environment of the cell, and is ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'hydrophilic ', style: paragraphBoldStyle),
+                        TextSpan(
+                            text: '(water – loving).',
+                            style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' +
+                                '1935 – Davson – Danielli Model (Hugh Davson and James Danielli) ',
+                            style: paragraphBoldStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$indent' +
+                                'The cell membrane is described as a ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'phospholipid bilayer sandwiched ',
+                            style: paragraphBoldStyle),
+                        TextSpan(text: 'by a ', style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'coat of protein ',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text: 'on either surface.',
+                            style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' +
+                                '1972 - Singer – Nicolson Model or Fluid Mosaic Model (Seymour J. Singer and Garth L. Nicolson) ',
+                            style: paragraphBoldStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$indent' +
+                                'The cell membrane is a mosaic of proteins that are embedded or attached to a ',
+                            style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'fluid bilayer of protein',
+                            style: paragraphBoldStyle),
+                        TextSpan(text: '.', style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  Container(
+                    child: Stack(
+                      fit: StackFit.passthrough,
+                      children: [
+                        Image(
+                          image: AssetImage('assets/PNGS/CELL MEMBRANE/cm.png'),
+                        )
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
 class CellMembrane3 extends StatefulWidget {
   static String route = '/cellmembrane3';
   @override
@@ -365,7 +487,7 @@ class _CellMembrane3State extends State<CellMembrane3> {
                     TextSpan(
                       children: [
                         TextSpan(
-                            text: 'Cell Membrane Models',
+                            text: 'Components and their Functions',
                             style: paragraphBoldStyle),
                       ],
                     ),
@@ -376,105 +498,32 @@ class _CellMembrane3State extends State<CellMembrane3> {
                     TextSpan(
                       children: [
                         TextSpan(
-                            text: '$bullet' +
-                                '•	1925 – Model of Bimolecular Phospholipid Membrane (Evert Gorter and Francois Grendel). ',
-                            style: paragraphBoldStyle),
-                      ],
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                  newLine,
-                  SelectableText.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
                             text: '$indent' +
-                                'The cell membrane is composed of a lipid bilayer with the ',
+                                'A multicellular organism contains ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'layer facing inward',
+                            text: 'cells with distinct membranes',
                             style: paragraphBoldStyle),
                         TextSpan(
                             text:
-                                ', away from the aqueous environment that surrounds the membrane, and is ',
+                                '. Although the membranes are not the same, they ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'hydrophobic ', style: paragraphBoldStyle),
+                            text: 'share common fundamental architecture',
+                            style: paragraphBoldStyle),
                         TextSpan(
-                            text: '(water – fearing); the other ',
+                            text: '. Cell membranes are ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'layer facing outward',
+                            text: 'assembled from five components',
                             style: paragraphBoldStyle),
                         TextSpan(
                             text:
-                                ', toward the outside environment of the cell, and is ',
+                                ': phospholipid, cholesterol, integral proteins, peripheral proteins, and carbohydrates. For you to know and understand the function of each principal component of the cell membrane, study the data given below showing the ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'hydrophilic ', style: paragraphBoldStyle),
-                        TextSpan(
-                            text: '(water – loving).',
-                            style: paragraphDefaultStyle),
-                      ],
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                  newLine,
-                  SelectableText.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
-                            text: '$bullet' +
-                                '•	1935 – Davson – Danielli Model (Hugh Davson and James Danielli) ',
-                            style: paragraphBoldStyle),
-                      ],
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                  newLine,
-                  SelectableText.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
-                            text: '$indent' +
-                                'The cell membrane is described as a ',
-                            style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'phospholipid bilayer sandwiched ',
-                            style: paragraphBoldStyle),
-                        TextSpan(text: 'by a ', style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'coat of protein ',
-                            style: paragraphBoldStyle),
-                        TextSpan(
-                            text: 'on either surface.',
-                            style: paragraphDefaultStyle),
-                      ],
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                  newLine,
-                  SelectableText.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
-                            text: '$bullet' +
-                                '•	1972 - Singer – Nicolson Model or Fluid Mosaic Model (Seymour J. Singer and Garth L. Nicolson) ',
-                            style: paragraphBoldStyle),
-                      ],
-                    ),
-                    textAlign: TextAlign.justify,
-                  ),
-                  newLine,
-                  SelectableText.rich(
-                    TextSpan(
-                      children: [
-                        TextSpan(
-                            text: '$indent' +
-                                'The cell membrane is a mosaic of proteins that are embedded or attached to a ',
-                            style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'fluid bilayer of protein',
+                            text:
+                                'components of the cell membrane and their functions',
                             style: paragraphBoldStyle),
                         TextSpan(text: '.', style: paragraphDefaultStyle),
                       ],
@@ -482,15 +531,81 @@ class _CellMembrane3State extends State<CellMembrane3> {
                     textAlign: TextAlign.justify,
                   ),
                   newLine,
-                  Container(
-                    child: Stack(
-                      fit: StackFit.passthrough,
+                  SelectableText.rich(
+                    TextSpan(
                       children: [
-                        Image(
-                          image: AssetImage('assets/PNGS/CELL MEMBRANE/cm.png'),
-                        )
+                        TextSpan(
+                            text: '$bullet' + '•	Phospholipid ',
+                            style: paragraphBoldStyle),
+                        TextSpan(text: '- ', style: paragraphDefaultStyle),
+                        TextSpan(
+                            text: 'Main fabric ', style: paragraphBoldStyle),
+                        TextSpan(
+                            text: 'of the cell membrane.',
+                            style: paragraphDefaultStyle),
                       ],
                     ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' + 'Integral Proteins ',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text:
+                                '- Transport substance through cell membrane; function as receptors; for cell adhesion; for structural support.',
+                            style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' + 'Peripheral Proteins ',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text:
+                                '- Function to transmit and recognize signals to and from the external environment',
+                            style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' + 'Cholesterol ',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text:
+                                '- Maintains the integrity and fluidity of the cell membrane; dampens effects of temperature.',
+                            style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
+                  ),
+                  newLine,
+                  SelectableText.rich(
+                    TextSpan(
+                      children: [
+                        TextSpan(
+                            text: '$bullet' + 'Carbohydrates ',
+                            style: paragraphBoldStyle),
+                        TextSpan(
+                            text:
+                                '- Function to transmit and recognize signals to and from the external environment; serve as an effective interaction with the aqueous environment',
+                            style: paragraphDefaultStyle),
+                      ],
+                    ),
+                    textAlign: TextAlign.justify,
                   ),
                 ],
               ),
