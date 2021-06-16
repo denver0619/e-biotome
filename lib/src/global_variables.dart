@@ -10,10 +10,10 @@ const clear = 0x00000000;
 
 final paragraphPadding = EdgeInsets.fromLTRB(10, 0, 10, 0);
 
-final pharagraphDefaultStyle =
+final paragraphDefaultStyle =
     TextStyle(fontFamily: 'CenturyGothic', color: Color(black), fontSize: 15);
 
-final pharagraphBoldStyle = TextStyle(
+final paragraphBoldStyle = TextStyle(
     fontFamily: 'CenturyGothic',
     fontWeight: FontWeight.bold,
     color: Color(black),
