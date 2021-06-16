@@ -515,10 +515,425 @@ class _Chromosomal2State extends State<Chromosomal2> {
                     SelectableText.rich(
                       TextSpan(
                         children: [
-                          TextSpan(text: '', style: paragraphDefaultStyle),
-                          TextSpan(text: '', style: paragraphBoldStyle),
+                          TextSpan(text: 'MONOSOMY', style: paragraphBoldStyle),
                         ],
                       ),
+                      textAlign: TextAlign.center,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'Turner’s syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-has only ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'one X chromosomes ',
+                              style: paragraphBoldStyle),
+                          TextSpan(
+                              text: 'in the ', style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: '23rd pair', style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-The ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'affected individual is female',
+                              style: paragraphBoldStyle),
+                          TextSpan(
+                              text:
+                                  ', short, with webbing of the neck, has a low hairline on the back of the neck, has a broad chest, exhibits slight mental deficiency, and the breasts, the external genital organ, and secondary characteristics do not develop.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(text: 'TRISOMY', style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'Down’s syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-has an ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'extra copy ', style: paragraphBoldStyle),
+                          TextSpan(
+                              text: 'of chromosome in the ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: '21st pair', style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' +
+                                  '-The mouth is usually open, slanting eyes, upper eyelid appears bulging or swollen, usually a low nose bridge, low – set ears, short broad hands with abnormal palm prints, mentally retarded, with heart and respiratory ailments, and a reduced life expectancy.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'Edward’s syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-has an ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'extra copy ', style: paragraphBoldStyle),
+                          TextSpan(
+                              text: 'of chromosome in the ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: '18th pair', style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' +
+                                  '-The jaws are small, clenched fingers, harelips, cleft palates, malformations of the heart, skull, face, and feet, severely mentally retarded, and die at three to four months of age.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'Patau’s syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-has an ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'extra copy ', style: paragraphBoldStyle),
+                          TextSpan(
+                              text: 'of chromosome in the ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: '13th pair', style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' +
+                                  '-There is deformation of hands and feet, as well as a face severely deformed by a cleft lip and cleft palate, and live from about a few days to a few months.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'Klinefelter’s syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-has an ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text:
+                                  'extra copy of X chromosome and one Y chromosome in the 23rd pair',
+                              style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-The ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'affected individual is male',
+                              style: paragraphBoldStyle),
+                          TextSpan(
+                              text:
+                                  ', has a general male appearance, the testes are usually small, sperm cells are usually not produced, most are mentally handicapped, the arms are longer than average, the breasts are slightly developed, the voice has a higher pitch than in normal males.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'Metafemale or Triple X syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-Has ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text:
+                                  'three to four X chromosomes in the 23rd pair',
+                              style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-The ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'affected individual is female',
+                              style: paragraphBoldStyle),
+                          TextSpan(
+                              text:
+                                  ', does not have distinct clinical features but may have menstrual irregularities, secondary amenorrhea, and premature menopause, generally has subnormal mental abilities.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'Metamales or Double Y syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-Has an ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text:
+                                  'extra copy of Y chromosome and one X chromosome in the 23rd pair',
+                              style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-The ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'affected individual is male',
+                              style: paragraphBoldStyle),
+                          TextSpan(
+                              text:
+                                  ', tall, with low IQ, with severe facial acne during adolescence, severely mentally retarded.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text:
+                                  'DELETION REFERS TO THE LOSS OF A FRAGMENT OF A CHROMOSOME',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'Cri-du-chat or cat-cry syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'Deletion of a segment ',
+                              style: paragraphBoldStyle),
+                          TextSpan(
+                              text: 'of a chromosome in the ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(text: '5th pair', style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' +
+                                  '-The affected individual has a characteristic high – pitched cry during infancy similar to a kitten in distress, malformed head and face, severely mentally retarded, with low IQ, and malformed and improperly functioning brain, heart, eyes, kidneys, bones, and larynx.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: 'William’s syndrome',
+                              style: paragraphBoldStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' + '-',
+                              style: paragraphDefaultStyle),
+                          TextSpan(
+                              text: 'Deletion of a segment ',
+                              style: paragraphBoldStyle),
+                          TextSpan(
+                              text: 'of a chromosome in the ',
+                              style: paragraphDefaultStyle),
+                          TextSpan(text: '7th pair', style: paragraphBoldStyle),
+                          TextSpan(text: '.', style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
+                    ),
+                    newLine,
+                    SelectableText.rich(
+                      TextSpan(
+                        children: [
+                          TextSpan(
+                              text: '$indent' +
+                                  '-The affected individual has broad forehead, flat nasal bridge, lower eyelid appears bulging or swollen, full lips, wide mouth, very active, and with cognitive impairment and developmental delays.',
+                              style: paragraphDefaultStyle),
+                        ],
+                      ),
+                      textAlign: TextAlign.justify,
                     ),
                   ],
                 ),
