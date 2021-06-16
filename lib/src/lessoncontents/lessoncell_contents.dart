@@ -52,7 +52,6 @@ class _Cells1State extends State<Cells1> {
             ),
           ],
         ),
-      ),
       body: Column(children: [
         Expanded(
             child: Padding(

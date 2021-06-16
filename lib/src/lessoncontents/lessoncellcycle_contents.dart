@@ -855,6 +855,7 @@ class _CellCycle3State extends State<CellCycle3> {
                             text: '$bullet' +
                                 'Homologous chromosomes separate to daughter cells (sister chromatids do not separate) in the first division, creating haploid (1N) cells.',
                             style: paragraphDefaultStyle),
+
                       ],
                     ),
                     textAlign: TextAlign.justify,
@@ -890,6 +891,7 @@ class _CellCycle3State extends State<CellCycle3> {
                         TextSpan(
                             text: '$indent' +
                                 'The last point appears to be the most difficult for students to grasp. Consider the X and Y chromosomes. They pair in prophase I, and then ',
+
                             style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'separate in the first division',
@@ -986,6 +988,7 @@ class _CellCycle3State extends State<CellCycle3> {
                           TextSpan(
                               text:
                                   'Here is a simplified diagram illustrating the overall process and products of meiosis:',
+
                               style: paragraphDefaultStyle),
                         ],
                       ),
@@ -1006,6 +1009,7 @@ class _CellCycle3State extends State<CellCycle3> {
                           TextSpan(
                               text:
                                   'Chromosomes, chromatids, what is the difference and how many chromosomes are there at different times of the cell cycle and after mitosis and meiosis?',
+
                               style: paragraphBoldStyle),
                         ],
                       ),
@@ -1018,6 +1022,7 @@ class _CellCycle3State extends State<CellCycle3> {
                         TextSpan(
                             text: '$indent' +
                                 'Chromosomes by definition contain the DNA that makes up the fundamental genome of the cell',
+
                             style: paragraphBoldStyle),
                         TextSpan(
                             text:
@@ -1598,6 +1603,7 @@ class _CellCycle4State extends State<CellCycle4> {
                         TextSpan(
                             text:
                                 'This checkpoint ensures that DNA replication in S phase has been successfully completed. If the said requirement was met, the cell will receive a ',
+
                             style: paragraphDefaultStyle),
                         TextSpan(
                             text: '“go – ahead” signal from kinase',
@@ -1651,3 +1657,6 @@ class _CellCycle4State extends State<CellCycle4> {
     );
   }
 }
+
+// TextSpan(text: '', style: pharagraphDefaultStyle),
+// TextSpan(text: '', style: pharagraphBoldStyle),
