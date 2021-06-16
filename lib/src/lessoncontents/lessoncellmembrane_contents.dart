@@ -7,20 +7,36 @@ class CellMembrane1 extends StatefulWidget {
 }
 
 class _CellMembrane1State extends State<CellMembrane1> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'The Cell Membrane', path: '/cellmembrane1'),
+    CardSheet(title: 'Cell Membrane Models', path: '/cellmembrane2'),
+    CardSheet(title: 'Components and their Functions', path: '/cellmembrane3'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Cell Membrane'),
+          title: Text('The Cell Membrane'),
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Cell Membrane'),
+                child: Center(
+                    child: Text('The Cell Membrane', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -37,6 +53,11 @@ class CellMembrane2 extends StatefulWidget {
 }
 
 class _CellMembrane2State extends State<CellMembrane2> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'The Cell Membrane', path: '/cellmembrane1'),
+    CardSheet(title: 'Cell Membrane Models', path: '/cellmembrane2'),
+    CardSheet(title: 'Components and their Functions', path: '/cellmembrane3'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,12 +66,23 @@ class _CellMembrane2State extends State<CellMembrane2> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Cell Membrane'),
+                child: Center(
+                    child: Text('The Cell Membrane', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -67,6 +99,11 @@ class CellMembrane3 extends StatefulWidget {
 }
 
 class _CellMembrane3State extends State<CellMembrane3> {
+  List<CardSheet> tilesheets = [
+    CardSheet(title: 'The Cell Membrane', path: '/cellmembrane1'),
+    CardSheet(title: 'Cell Membrane Models', path: '/cellmembrane2'),
+    CardSheet(title: 'Components and their Functions', path: '/cellmembrane3'),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,12 +112,23 @@ class _CellMembrane3State extends State<CellMembrane3> {
           backgroundColor: Color(darkBlue),
         ),
         drawer: Drawer(
-          child: ListView(
+          child: Column(
             children: [
               DrawerHeader(
-                child: Text('Cell Membrane'),
+                child: Center(
+                    child: Text('The Cell Membrane', style: drawerHeaderStyle)),
               ),
-              ListTile()
+              Expanded(
+                child: ListView(
+                    children: tilesheets
+                        .map((tilesheet) => ListTile(
+                            title: Text('${tilesheet.title}',
+                                style: drawerTileStyle),
+                            onTap: () {
+                              Navigator.pushNamed(context, '${tilesheet.path}');
+                            }))
+                        .toList()),
+              ),
             ],
           ),
         ),
@@ -89,3 +137,6 @@ class _CellMembrane3State extends State<CellMembrane3> {
         ));
   }
 }
+
+// TextSpan(text: '', style: paragraphDefaultStyle),
+// TextSpan(text: '', style: paragraphBoldStyle),

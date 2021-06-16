@@ -270,7 +270,7 @@ class CellMembraneLesson extends StatefulWidget {
 
 class _CellMembraneLessonState extends State<CellMembraneLesson> {
   List<CardSheet> cardsheets = [
-    CardSheet(title: 'Cell Membrane', path: '/cellmembrane1'),
+    CardSheet(title: 'The Cell Membrane', path: '/cellmembrane1'),
     CardSheet(title: 'Cell Membrane Models', path: '/cellmembrane2'),
     CardSheet(title: 'Components and their Functions', path: '/cellmembrane3'),
   ];
