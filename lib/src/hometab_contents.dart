@@ -51,7 +51,7 @@ class _HomeTabState extends State<HomeTab> {
     final appBarHeight = appBar.preferredSize.height;
     final statusBarHeight = MediaQuery.of(context).padding.top;
     final bodyHeight = screenHeight - appBarHeight - statusBarHeight;
-    final columnSidePadding = screenWidth * 0.15;
+    final columnSidePadding = screenWidth * 0.12;
     return Scaffold(
       appBar: appBar,
       body: Container(
@@ -72,7 +72,7 @@ class _HomeTabState extends State<HomeTab> {
                 'WELCOME TO E-BIOTOME!',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                    fontFamily: 'LuckiestGuy', fontSize: 25, letterSpacing: 1),
+                    fontFamily: 'LuckiestGuy', fontSize: 20, letterSpacing: 1),
               ),
               Text('Discover more about Biology by reading these daily trivia.',
                   textAlign: TextAlign.center,
