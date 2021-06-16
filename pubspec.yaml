@@ -47,6 +47,7 @@ flutter:
     - assets/PNGS/CELL/
     - assets/PNGS/TISSUE/
     - assets/PNGS/CELL CYCLE/
+    - assets/PNGS/CELL MEMBRANE/
 
   fonts:
     - family: LuckiestGuy
