@@ -57,37 +57,50 @@ class _HomeTabState extends State<HomeTab> {
       body: Container(
         height: screenHeight - appBarHeight - statusBarHeight,
         decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage('assets/PNGS/BG HOME.png'),
+            fit: BoxFit.fitWidth,
+          ),
+        ),
+        child: Container(
+          height: screenHeight - appBarHeight - statusBarHeight,
+          decoration: BoxDecoration(
             image: DecorationImage(
-          image: AssetImage('assets/PNGS/BG_FRONT_PAGE.png'),
-          fit: BoxFit.fitHeight,
-        )),
-        child: Padding(
-          padding: EdgeInsets.fromLTRB(
-              columnSidePadding, bodyHeight * 0.45, columnSidePadding, 0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text(''),
-              Text(
-                'WELCOME TO E-BIOTOME!',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontFamily: 'LuckiestGuy', fontSize: 20, letterSpacing: 1),
-              ),
-              Text('Discover more about Biology by reading these daily trivia.',
+              image: AssetImage('assets/PNGS/BG_FRONT_PAGE.png'),
+              fit: BoxFit.fitHeight,
+            ),
+          ),
+          child: Padding(
+            padding: EdgeInsets.fromLTRB(
+                columnSidePadding, bodyHeight * 0.45, columnSidePadding, 0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text(''),
+                Text(
+                  'WELCOME TO E-BIOTOME!',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontFamily: 'CenturyGothic')),
-              Text(''),
-              Expanded(
-                child: GridView.count(
-                  crossAxisCount: 2,
-                  children: [
-                    CellsCardSheet(context: context),
-                    TissuesCardSheet(context: context)
-                  ],
+                  style: TextStyle(
+                      fontFamily: 'LuckiestGuy',
+                      fontSize: 20,
+                      letterSpacing: 1),
                 ),
-              )
-            ],
+                Text(
+                    'Discover more about Biology by reading these daily trivia.',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(fontFamily: 'CenturyGothic')),
+                Text(''),
+                Expanded(
+                  child: GridView.count(
+                    crossAxisCount: 2,
+                    children: [
+                      CellsCardSheet(context: context),
+                      TissuesCardSheet(context: context)
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
         ),
       ),

@@ -27,7 +27,6 @@ class _CellsLessonState extends State<CellsLesson> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      backgroundColor: Color(darkBlue),
       elevation: 0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
@@ -91,7 +90,6 @@ class _TissuesLessonState extends State<TissuesLesson> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      backgroundColor: Color(darkBlue),
       elevation: 0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
@@ -154,7 +152,6 @@ class _CellCycleLessonState extends State<CellCycleLesson> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      backgroundColor: Color(darkBlue),
       elevation: 0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
@@ -215,7 +212,6 @@ class _ChromosomalLessonState extends State<ChromosomalLesson> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      backgroundColor: Color(darkBlue),
       elevation: 0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
@@ -277,7 +273,6 @@ class _CellMembraneLessonState extends State<CellMembraneLesson> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      backgroundColor: Color(darkBlue),
       elevation: 0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
@@ -346,7 +341,6 @@ class _MovementMaterialsLessonState extends State<MovementMaterialsLesson> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      backgroundColor: Color(darkBlue),
       elevation: 0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
@@ -408,7 +402,6 @@ class _EnzymesLessonState extends State<EnzymesLesson> {
   @override
   Widget build(BuildContext context) {
     final appBar = AppBar(
-      backgroundColor: Color(darkBlue),
       elevation: 0,
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
