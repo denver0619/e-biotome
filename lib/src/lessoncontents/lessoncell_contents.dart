@@ -32,8 +32,13 @@ class _Cells1State extends State<Cells1> {
       appBar: AppBar(
         title: Hero(tag: 'dash', child: Text('Discoveries and Breakthroughs')),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+            icon: Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.pop(context);
+            }),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -46,7 +51,8 @@ class _Cells1State extends State<Cells1> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -137,8 +143,13 @@ class _Cells2State extends State<Cells2> {
         appBar: AppBar(
           title: Text('What is Cell?'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context);
+              }),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -151,7 +162,8 @@ class _Cells2State extends State<Cells2> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),
@@ -240,8 +252,13 @@ class _Cells3State extends State<Cells3> {
         appBar: AppBar(
           title: Text('Bacterial, Animal, and Plant Cell Structure'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context);
+              }),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -254,7 +271,8 @@ class _Cells3State extends State<Cells3> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),
@@ -323,8 +341,13 @@ class _Cells4State extends State<Cells4> {
         appBar: AppBar(
           title: Text('Cell Structures and Functions'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context);
+              }),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -337,7 +360,8 @@ class _Cells4State extends State<Cells4> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),
@@ -627,8 +651,13 @@ class _Cells5State extends State<Cells5> {
         appBar: AppBar(
           title: Text('Prokaryotic and Eukaryotic Cells'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+              icon: Icon(Icons.arrow_back),
+              onPressed: () {
+                Navigator.pop(context);
+              }),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -641,7 +670,8 @@ class _Cells5State extends State<Cells5> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),

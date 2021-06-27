@@ -18,8 +18,14 @@ class _CellMembrane1State extends State<CellMembrane1> {
       appBar: AppBar(
         title: Text('The Cell Membrane'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -33,7 +39,8 @@ class _CellMembrane1State extends State<CellMembrane1> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -264,8 +271,14 @@ class _CellMembrane2State extends State<CellMembrane2> {
       appBar: AppBar(
         title: Text('Cell Membrane Models'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -279,7 +292,8 @@ class _CellMembrane2State extends State<CellMembrane2> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -453,8 +467,14 @@ class _CellMembrane3State extends State<CellMembrane3> {
       appBar: AppBar(
         title: Text('Components and their Functions'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -468,7 +488,8 @@ class _CellMembrane3State extends State<CellMembrane3> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),

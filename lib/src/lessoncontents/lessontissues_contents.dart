@@ -20,8 +20,14 @@ class _Tissues1State extends State<Tissues1> {
       appBar: AppBar(
         title: Text('Epithelial Tissues'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -34,7 +40,8 @@ class _Tissues1State extends State<Tissues1> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -62,7 +69,6 @@ class _Tissues1State extends State<Tissues1> {
                       TextSpan(
                           text: '$indent' +
                               'Organs are essential for adaptation and survival. But what are organs without tissues? Touch your cheeks. You feel some flesh. As you run your fingers gently over them, you feel tiny, hair – like projections. Press your cheeks with your fingers. Something is hard underneath; this is a bone structure. Slap one of your cheeks lightly and take note of any change on your face. You will feel a warm sensation because of the red flush on your face. When you slapped your cheek, blood rushed to it and the pressure applied caused your blood vessels to emit the red coloring on your face. What is your cheek made up of? It is made up of cells just as the skin that covers the earthworm or the frog or the horse. ',
-
                           style: paragraphDefaultStyle),
                       TextSpan(
                           text:
@@ -158,8 +164,14 @@ class _Tissues2State extends State<Tissues2> {
         appBar: AppBar(
           title: Text('Types of Epithelial Tissues'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back),
+          ),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -172,7 +184,8 @@ class _Tissues2State extends State<Tissues2> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),
@@ -374,8 +387,14 @@ class _Tissues3State extends State<Tissues3> {
         appBar: AppBar(
           title: Text('Connective Tissues'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back),
+          ),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -388,7 +407,8 @@ class _Tissues3State extends State<Tissues3> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),
@@ -593,8 +613,14 @@ class _Tissues4State extends State<Tissues4> {
         appBar: AppBar(
           title: Text('Muscle Tissues'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back),
+          ),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -607,7 +633,8 @@ class _Tissues4State extends State<Tissues4> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),
@@ -754,8 +781,14 @@ class _Tissues5State extends State<Tissues5> {
         appBar: AppBar(
           title: Text('Nervous Tissues'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back),
+          ),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -768,7 +801,8 @@ class _Tissues5State extends State<Tissues5> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),

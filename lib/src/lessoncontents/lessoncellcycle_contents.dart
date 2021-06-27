@@ -19,8 +19,14 @@ class _CellCycle1State extends State<CellCycle1> {
       appBar: AppBar(
         title: Text('The Cell Cycle: Introduction'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -34,7 +40,8 @@ class _CellCycle1State extends State<CellCycle1> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -91,8 +98,7 @@ class _CellCycle1State extends State<CellCycle1> {
                         TextSpan(
                             text: 'single- celled organisms',
                             style: paragraphBoldStyle),
-                        TextSpan(
-                            text: ', they ', style: paragraphDefaultStyle),
+                        TextSpan(text: ', they ', style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'use cell division ',
                             style: paragraphBoldStyle),
@@ -118,8 +124,7 @@ class _CellCycle1State extends State<CellCycle1> {
                             text:
                                 'has its foundation in the reproduction of cells by way of the ',
                             style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'cell cycle', style: paragraphBoldStyle),
+                        TextSpan(text: 'cell cycle', style: paragraphBoldStyle),
                         TextSpan(
                             text: '. The cell cycle is an ',
                             style: paragraphDefaultStyle),
@@ -241,8 +246,7 @@ class _CellCycle1State extends State<CellCycle1> {
                             text: 'between males and females are the ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'sex chromosomes',
-                            style: paragraphBoldStyle),
+                            text: 'sex chromosomes', style: paragraphBoldStyle),
                         TextSpan(
                             text:
                                 ', X and Y for most mammals. Humans most commonly have ',
@@ -302,8 +306,7 @@ class _CellCycle1State extends State<CellCycle1> {
                         TextSpan(
                             text: ', such as chromosome 1, are called ',
                             style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'homologous', style: paragraphBoldStyle),
+                        TextSpan(text: 'homologous', style: paragraphBoldStyle),
                         TextSpan(
                             text:
                                 '. The karyotype image above shows the homologous pairs for all the autosomes. Homologous chromosomes are ',
@@ -348,8 +351,14 @@ class _CellCycle2State extends State<CellCycle2> {
       appBar: AppBar(
         title: Text('Mitosis'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -363,7 +372,8 @@ class _CellCycle2State extends State<CellCycle2> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -408,8 +418,7 @@ class _CellCycle2State extends State<CellCycle2> {
                         TextSpan(
                             text: '. After ', style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'DNA replication',
-                            style: paragraphBoldStyle),
+                            text: 'DNA replication', style: paragraphBoldStyle),
                         TextSpan(text: ', the ', style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'cells is still genetically diploid ',
@@ -418,8 +427,7 @@ class _CellCycle2State extends State<CellCycle2> {
                             text: '(2N chromosome number), but has ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: '4X DNA content ',
-                            style: paragraphBoldStyle),
+                            text: '4X DNA content ', style: paragraphBoldStyle),
                         TextSpan(
                             text:
                                 'because each chromosome has replicated its DNA. Each chromosome now consists of a joined pair of identical sister chromatids. During ',
@@ -648,13 +656,11 @@ class _CellCycle2State extends State<CellCycle2> {
                             text: 'of the daughter cells ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'start to reform',
-                            style: paragraphBoldStyle),
+                            text: 'start to reform', style: paragraphBoldStyle),
                         TextSpan(
                             text: '. The chromosomes start to ',
                             style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'decondense', style: paragraphBoldStyle),
+                        TextSpan(text: 'decondense', style: paragraphBoldStyle),
                         TextSpan(text: '.', style: paragraphDefaultStyle),
                       ],
                     ),
@@ -683,8 +689,7 @@ class _CellCycle2State extends State<CellCycle2> {
                                 '. The chromosomes are no longer visible. The constriction continues forming the ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'cleavage furrow',
-                            style: paragraphBoldStyle),
+                            text: 'cleavage furrow', style: paragraphBoldStyle),
                         TextSpan(text: ', ', style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'which pinches the cell in two',
@@ -746,8 +751,14 @@ class _CellCycle3State extends State<CellCycle3> {
       appBar: AppBar(
         title: Text('Meiosis'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -761,7 +772,8 @@ class _CellCycle3State extends State<CellCycle3> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -855,7 +867,6 @@ class _CellCycle3State extends State<CellCycle3> {
                             text: '$bullet' +
                                 'Homologous chromosomes separate to daughter cells (sister chromatids do not separate) in the first division, creating haploid (1N) cells.',
                             style: paragraphDefaultStyle),
-
                       ],
                     ),
                     textAlign: TextAlign.justify,
@@ -891,7 +902,6 @@ class _CellCycle3State extends State<CellCycle3> {
                         TextSpan(
                             text: '$indent' +
                                 'The last point appears to be the most difficult for students to grasp. Consider the X and Y chromosomes. They pair in prophase I, and then ',
-
                             style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'separate in the first division',
@@ -988,7 +998,6 @@ class _CellCycle3State extends State<CellCycle3> {
                           TextSpan(
                               text:
                                   'Here is a simplified diagram illustrating the overall process and products of meiosis:',
-
                               style: paragraphDefaultStyle),
                         ],
                       ),
@@ -1009,7 +1018,6 @@ class _CellCycle3State extends State<CellCycle3> {
                           TextSpan(
                               text:
                                   'Chromosomes, chromatids, what is the difference and how many chromosomes are there at different times of the cell cycle and after mitosis and meiosis?',
-
                               style: paragraphBoldStyle),
                         ],
                       ),
@@ -1022,7 +1030,6 @@ class _CellCycle3State extends State<CellCycle3> {
                         TextSpan(
                             text: '$indent' +
                                 'Chromosomes by definition contain the DNA that makes up the fundamental genome of the cell',
-
                             style: paragraphBoldStyle),
                         TextSpan(
                             text:
@@ -1032,8 +1039,7 @@ class _CellCycle3State extends State<CellCycle3> {
                             text:
                                 'Chromosomes exist at all different phases of the cell cycle',
                             style: paragraphBoldStyle),
-                        TextSpan(
-                            text: '. They ', style: paragraphDefaultStyle),
+                        TextSpan(text: '. They ', style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'condense and become visible ',
                             style: paragraphBoldStyle),
@@ -1051,8 +1057,7 @@ class _CellCycle3State extends State<CellCycle3> {
                         TextSpan(
                             text: ', in the form of ',
                             style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'chromatin ', style: paragraphBoldStyle),
+                        TextSpan(text: 'chromatin ', style: paragraphBoldStyle),
                         TextSpan(
                             text:
                                 '(DNA wrapped around nucleosomes, like “beads on a string”).',
@@ -1087,8 +1092,7 @@ class _CellCycle3State extends State<CellCycle3> {
                         TextSpan(
                             text: '2N chromosomes', style: paragraphBoldStyle),
                         TextSpan(
-                            text: ', because a ',
-                            style: paragraphDefaultStyle),
+                            text: ', because a ', style: paragraphDefaultStyle),
                         TextSpan(
                             text:
                                 'diploid organism is created by union of 2 gametes each containing 1N chromosomes',
@@ -1276,8 +1280,14 @@ class _CellCycle4State extends State<CellCycle4> {
       appBar: AppBar(
         title: Text('More about Cell Cycle'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -1291,7 +1301,8 @@ class _CellCycle4State extends State<CellCycle4> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -1339,8 +1350,7 @@ class _CellCycle4State extends State<CellCycle4> {
                         TextSpan(
                             text: 'of a cell is called the ',
                             style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'cell cycle', style: paragraphBoldStyle),
+                        TextSpan(text: 'cell cycle', style: paragraphBoldStyle),
                         TextSpan(text: '. The ', style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'cell cycle has two parts',
@@ -1392,8 +1402,7 @@ class _CellCycle4State extends State<CellCycle4> {
                             text:
                                 '. This lesson will be focusing on mitosis that involves the cell division of body cells (somatic). During ',
                             style: paragraphDefaultStyle),
-                        TextSpan(
-                            text: 'interphase', style: paragraphBoldStyle),
+                        TextSpan(text: 'interphase', style: paragraphBoldStyle),
                         TextSpan(
                             text: ', the cell grows, and ',
                             style: paragraphDefaultStyle),
@@ -1492,11 +1501,9 @@ class _CellCycle4State extends State<CellCycle4> {
                             text: ', is driven by a ',
                             style: paragraphDefaultStyle),
                         TextSpan(
-                            text: 'built-in clock ',
-                            style: paragraphBoldStyle),
+                            text: 'built-in clock ', style: paragraphBoldStyle),
                         TextSpan(
-                            text: 'that can be ',
-                            style: paragraphDefaultStyle),
+                            text: 'that can be ', style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'adjusted by external stimuli ',
                             style: paragraphBoldStyle),
@@ -1603,7 +1610,6 @@ class _CellCycle4State extends State<CellCycle4> {
                         TextSpan(
                             text:
                                 'This checkpoint ensures that DNA replication in S phase has been successfully completed. If the said requirement was met, the cell will receive a ',
-
                             style: paragraphDefaultStyle),
                         TextSpan(
                             text: '“go – ahead” signal from kinase',
@@ -1630,8 +1636,7 @@ class _CellCycle4State extends State<CellCycle4> {
                             text: 'the cell organelles duplicates',
                             style: paragraphBoldStyle),
                         TextSpan(
-                            text: '. Also, the ',
-                            style: paragraphDefaultStyle),
+                            text: '. Also, the ', style: paragraphDefaultStyle),
                         TextSpan(
                             text: 'chromosomes uncoil ',
                             style: paragraphBoldStyle),

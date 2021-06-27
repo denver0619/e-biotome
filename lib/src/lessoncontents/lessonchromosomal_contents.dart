@@ -17,8 +17,14 @@ class _Chromosomal1State extends State<Chromosomal1> {
       appBar: AppBar(
         title: Text('Errors in Mitosis'),
         backgroundColor: Color(darkBlue),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(Icons.arrow_back),
+        ),
       ),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: Column(
           children: [
             DrawerHeader(
@@ -33,7 +39,8 @@ class _Chromosomal1State extends State<Chromosomal1> {
                           title: Text('${tilesheet.title}',
                               style: drawerTileStyle),
                           onTap: () {
-                            Navigator.pushNamed(context, '${tilesheet.path}');
+                            Navigator.popAndPushNamed(
+                                context, '${tilesheet.path}');
                           }))
                       .toList()),
             ),
@@ -481,8 +488,14 @@ class _Chromosomal2State extends State<Chromosomal2> {
         appBar: AppBar(
           title: Text('Chromosomal Abnormalities'),
           backgroundColor: Color(darkBlue),
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: Icon(Icons.arrow_back),
+          ),
         ),
-        drawer: Drawer(
+        endDrawer: Drawer(
           child: Column(
             children: [
               DrawerHeader(
@@ -497,7 +510,8 @@ class _Chromosomal2State extends State<Chromosomal2> {
                             title: Text('${tilesheet.title}',
                                 style: drawerTileStyle),
                             onTap: () {
-                              Navigator.pushNamed(context, '${tilesheet.path}');
+                              Navigator.popAndPushNamed(
+                                  context, '${tilesheet.path}');
                             }))
                         .toList()),
               ),
