@@ -28,6 +28,7 @@ class _CellsLessonState extends State<CellsLesson> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       elevation: 0,
+      backgroundColor: Color(darkBlue),
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
         onPressed: () {
@@ -37,7 +38,6 @@ class _CellsLessonState extends State<CellsLesson> {
     );
 
     return Scaffold(
-      backgroundColor: Color(lightBlue),
       appBar: appBar,
       body: Column(
         mainAxisSize: MainAxisSize.min,
@@ -91,6 +91,7 @@ class _TissuesLessonState extends State<TissuesLesson> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       elevation: 0,
+      backgroundColor: Color(darkBlue),
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
         onPressed: () {
@@ -100,7 +101,6 @@ class _TissuesLessonState extends State<TissuesLesson> {
     );
 
     return Scaffold(
-      backgroundColor: Color(lightBlue),
       appBar: appBar,
       body: Column(
         mainAxisSize: MainAxisSize.min,
@@ -153,6 +153,7 @@ class _CellCycleLessonState extends State<CellCycleLesson> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       elevation: 0,
+      backgroundColor: Color(darkBlue),
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
         onPressed: () {
@@ -162,7 +163,6 @@ class _CellCycleLessonState extends State<CellCycleLesson> {
     );
 
     return Scaffold(
-      backgroundColor: Color(lightBlue),
       appBar: appBar,
       body: Column(
         mainAxisSize: MainAxisSize.min,
@@ -213,6 +213,7 @@ class _ChromosomalLessonState extends State<ChromosomalLesson> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       elevation: 0,
+      backgroundColor: Color(darkBlue),
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
         onPressed: () {
@@ -222,7 +223,6 @@ class _ChromosomalLessonState extends State<ChromosomalLesson> {
     );
 
     return Scaffold(
-      backgroundColor: Color(lightBlue),
       appBar: appBar,
       body: Column(
         mainAxisSize: MainAxisSize.min,
@@ -274,6 +274,7 @@ class _CellMembraneLessonState extends State<CellMembraneLesson> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       elevation: 0,
+      backgroundColor: Color(darkBlue),
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
         onPressed: () {
@@ -283,7 +284,6 @@ class _CellMembraneLessonState extends State<CellMembraneLesson> {
     );
 
     return Scaffold(
-      backgroundColor: Color(lightBlue),
       appBar: appBar,
       body: Column(
         mainAxisSize: MainAxisSize.min,
@@ -342,6 +342,7 @@ class _MovementMaterialsLessonState extends State<MovementMaterialsLesson> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       elevation: 0,
+      backgroundColor: Color(darkBlue),
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
         onPressed: () {
@@ -351,7 +352,6 @@ class _MovementMaterialsLessonState extends State<MovementMaterialsLesson> {
     );
 
     return Scaffold(
-      backgroundColor: Color(lightBlue),
       appBar: appBar,
       body: Column(
         mainAxisSize: MainAxisSize.min,
@@ -403,6 +403,7 @@ class _EnzymesLessonState extends State<EnzymesLesson> {
   Widget build(BuildContext context) {
     final appBar = AppBar(
       elevation: 0,
+      backgroundColor: Color(darkBlue),
       leading: IconButton(
         icon: Icon(Icons.arrow_back),
         onPressed: () {
@@ -412,7 +413,6 @@ class _EnzymesLessonState extends State<EnzymesLesson> {
     );
 
     return Scaffold(
-      backgroundColor: Color(lightBlue),
       appBar: appBar,
       body: Column(
         mainAxisSize: MainAxisSize.min,
