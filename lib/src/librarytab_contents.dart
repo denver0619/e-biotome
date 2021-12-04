@@ -82,6 +82,10 @@ class _LibraryTabState extends State<LibraryTab> {
   }
 }
 
+//Title for the lesson sheet
+final sheetTitle = "List of Topics";
+
+//shows list of lessons in this category
 class CellsCardSheet extends StatefulWidget {
   const CellsCardSheet({
     Key key,
@@ -109,7 +113,8 @@ class _CellsCardSheetState extends State<CellsCardSheet> {
               height: 380,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/cellslesson');
+                  Navigator.of(context)
+                      .pushNamed('/cellslesson', arguments: sheetTitle);
                 },
               ),
             ),
@@ -120,6 +125,7 @@ class _CellsCardSheetState extends State<CellsCardSheet> {
   }
 }
 
+//shows list of lessons in this category
 class TissuesCardSheet extends StatefulWidget {
   const TissuesCardSheet({
     Key key,
@@ -146,7 +152,8 @@ class _TissuesCardSheetState extends State<TissuesCardSheet> {
               height: 380,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/tissueslesson');
+                  Navigator.of(context)
+                      .pushNamed('/tissueslesson', arguments: sheetTitle);
                 },
               ),
             )
@@ -157,6 +164,7 @@ class _TissuesCardSheetState extends State<TissuesCardSheet> {
   }
 }
 
+//shows list of lessons in this category
 class CellCycleCardSheet extends StatefulWidget {
   const CellCycleCardSheet({
     Key key,
@@ -183,7 +191,8 @@ class _CellCycleCardSheetState extends State<CellCycleCardSheet> {
               height: 380,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/cellcyclelesson');
+                  Navigator.of(context)
+                      .pushNamed('/cellcyclelesson', arguments: sheetTitle);
                 },
               ),
             )
@@ -194,6 +203,7 @@ class _CellCycleCardSheetState extends State<CellCycleCardSheet> {
   }
 }
 
+//shows list of lessons in this category
 class ChromosomalCardSheet extends StatefulWidget {
   const ChromosomalCardSheet({
     Key key,
@@ -220,7 +230,8 @@ class _ChromosomalCardSheetState extends State<ChromosomalCardSheet> {
               height: 380,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/chromosomallesson');
+                  Navigator.of(context)
+                      .pushNamed('/chromosomallesson', arguments: sheetTitle);
                 },
               ),
             )
@@ -231,6 +242,7 @@ class _ChromosomalCardSheetState extends State<ChromosomalCardSheet> {
   }
 }
 
+//shows list of lessons in this category
 class CellMembraneCardSheet extends StatefulWidget {
   const CellMembraneCardSheet({
     Key key,
@@ -257,7 +269,8 @@ class _CellMembraneCardSheetState extends State<CellMembraneCardSheet> {
               height: 380,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/cellmembranelesson');
+                  Navigator.of(context)
+                      .pushNamed('/cellmembranelesson', arguments: sheetTitle);
                 },
               ),
             )
@@ -268,6 +281,7 @@ class _CellMembraneCardSheetState extends State<CellMembraneCardSheet> {
   }
 }
 
+//shows list of lessons in this category
 class MovementMaterialsCardSheet extends StatefulWidget {
   const MovementMaterialsCardSheet({
     Key key,
@@ -296,7 +310,8 @@ class _MovementMaterialsCardSheetState
               height: 380,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/movementmaterialslesson');
+                  Navigator.of(context).pushNamed('/movementmaterialslesson',
+                      arguments: sheetTitle);
                 },
               ),
             )
@@ -307,6 +322,7 @@ class _MovementMaterialsCardSheetState
   }
 }
 
+//shows list of lessons in this category
 class EnzymesCardSheet extends StatefulWidget {
   const EnzymesCardSheet({
     Key key,
@@ -333,7 +349,8 @@ class _EnzymesCardSheetState extends State<EnzymesCardSheet> {
               height: 380,
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/enzymeslesson');
+                  Navigator.of(context)
+                      .pushNamed('/enzymeslesson', arguments: sheetTitle);
                 },
               ),
             )

@@ -10,7 +10,8 @@ class CardSheet {
 }
 
 class CellsLesson extends StatefulWidget {
-  static String route = '/cellslesson';
+  const CellsLesson({Key key, this.title}) : super(key: key);
+  final String title;
   @override
   _CellsLessonState createState() => _CellsLessonState();
 }
@@ -35,6 +36,7 @@ class _CellsLessonState extends State<CellsLesson> {
           Navigator.pop(context);
         },
       ),
+      title: Text('${widget.title}'),
     );
 
     return Scaffold(
@@ -75,7 +77,8 @@ class _CellsLessonState extends State<CellsLesson> {
 }
 
 class TissuesLesson extends StatefulWidget {
-  static String route = '/tissueslesson';
+  const TissuesLesson({Key key, this.title}) : super(key: key);
+  final String title;
   @override
   _TissuesLessonState createState() => _TissuesLessonState();
 }
@@ -99,6 +102,7 @@ class _TissuesLessonState extends State<TissuesLesson> {
           Navigator.pop(context);
         },
       ),
+      title: Text('${widget.title}'),
     );
 
     return Scaffold(
@@ -139,7 +143,8 @@ class _TissuesLessonState extends State<TissuesLesson> {
 }
 
 class CellCycleLesson extends StatefulWidget {
-  static String route = '/cellcyclelesson';
+  const CellCycleLesson({Key key, this.title}) : super(key: key);
+  final String title;
   @override
   _CellCycleLessonState createState() => _CellCycleLessonState();
 }
@@ -162,6 +167,7 @@ class _CellCycleLessonState extends State<CellCycleLesson> {
           Navigator.pop(context);
         },
       ),
+      title: Text('${widget.title}'),
     );
 
     return Scaffold(
@@ -202,7 +208,8 @@ class _CellCycleLessonState extends State<CellCycleLesson> {
 }
 
 class ChromosomalLesson extends StatefulWidget {
-  static String route = '/chromosomallesson';
+  const ChromosomalLesson({Key key, this.title}) : super(key: key);
+  final String title;
   @override
   _ChromosomalLessonState createState() => _ChromosomalLessonState();
 }
@@ -223,6 +230,7 @@ class _ChromosomalLessonState extends State<ChromosomalLesson> {
           Navigator.pop(context);
         },
       ),
+      title: Text('${widget.title}'),
     );
 
     return Scaffold(
@@ -263,7 +271,8 @@ class _ChromosomalLessonState extends State<ChromosomalLesson> {
 }
 
 class CellMembraneLesson extends StatefulWidget {
-  static String route = '/cellmembranelesson';
+  const CellMembraneLesson({Key key, this.title}) : super(key: key);
+  final String title;
   @override
   _CellMembraneLessonState createState() => _CellMembraneLessonState();
 }
@@ -285,6 +294,7 @@ class _CellMembraneLessonState extends State<CellMembraneLesson> {
           Navigator.pop(context);
         },
       ),
+      title: Text('${widget.title}'),
     );
 
     return Scaffold(
@@ -325,7 +335,8 @@ class _CellMembraneLessonState extends State<CellMembraneLesson> {
 }
 
 class MovementMaterialsLesson extends StatefulWidget {
-  static String route = '/movementmaterialslesson';
+  const MovementMaterialsLesson({Key key, this.title}) : super(key: key);
+  final String title;
   @override
   _MovementMaterialsLessonState createState() =>
       _MovementMaterialsLessonState();
@@ -354,6 +365,7 @@ class _MovementMaterialsLessonState extends State<MovementMaterialsLesson> {
           Navigator.pop(context);
         },
       ),
+      title: Text('${widget.title}'),
     );
 
     return Scaffold(
@@ -394,7 +406,8 @@ class _MovementMaterialsLessonState extends State<MovementMaterialsLesson> {
 }
 
 class EnzymesLesson extends StatefulWidget {
-  static String route = '/enzymeslesson';
+  const EnzymesLesson({Key key, this.title}) : super(key: key);
+  final String title;
   @override
   _EnzymesLessonState createState() => _EnzymesLessonState();
 }
@@ -416,6 +429,7 @@ class _EnzymesLessonState extends State<EnzymesLesson> {
           Navigator.pop(context);
         },
       ),
+      title: Text('${widget.title}'),
     );
 
     return Scaffold(

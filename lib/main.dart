@@ -13,9 +13,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      initialRoute: MyHomePage.route,
+      initialRoute: '/',
       //this contains the name of routes for navigation inside the app
-      routes: getRoutes(),
+      onGenerateRoute: RoutGenerator.generateRoute,
       // onGenerateRoute: ,
     );
   }
