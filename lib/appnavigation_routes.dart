@@ -13,7 +13,7 @@ class RoutGenerator {
       case '/cellslesson':
         if (args is String) {
           return MaterialPageRoute(builder: (_) {
-            return CellsLesson();
+            return CellsLesson(title: args);
           });
         } else {
           return _errorWrongDataType();
@@ -22,7 +22,7 @@ class RoutGenerator {
       case '/tissueslesson':
         if (args is String) {
           return MaterialPageRoute(builder: (_) {
-            return TissuesLesson();
+            return TissuesLesson(title: args);
           });
         } else {
           return _errorWrongDataType();
@@ -31,7 +31,7 @@ class RoutGenerator {
       case '/cellcyclelesson':
         if (args is String) {
           return MaterialPageRoute(builder: (_) {
-            return CellCycleLesson();
+            return CellCycleLesson(title: args);
           });
         } else {
           return _errorWrongDataType();
@@ -40,7 +40,7 @@ class RoutGenerator {
       case '/chromosomallesson':
         if (args is String) {
           return MaterialPageRoute(builder: (_) {
-            return ChromosomalLesson();
+            return ChromosomalLesson(title: args);
           });
         } else {
           return _errorWrongDataType();
@@ -49,7 +49,7 @@ class RoutGenerator {
       case '/cellmembranelesson':
         if (args is String) {
           return MaterialPageRoute(builder: (_) {
-            return CellMembraneLesson();
+            return CellMembraneLesson(title: args);
           });
         } else {
           return _errorWrongDataType();
@@ -58,7 +58,7 @@ class RoutGenerator {
       case '/movementmaterialslesson':
         if (args is String) {
           return MaterialPageRoute(builder: (_) {
-            return MovementMaterialsLesson();
+            return MovementMaterialsLesson(title: args);
           });
         } else {
           return _errorWrongDataType();
@@ -67,7 +67,7 @@ class RoutGenerator {
       case '/enzymeslesson':
         if (args is String) {
           return MaterialPageRoute(builder: (_) {
-            return MovementMaterialsLesson();
+            return MovementMaterialsLesson(title: args);
           });
         } else {
           return _errorWrongDataType();

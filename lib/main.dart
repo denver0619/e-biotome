@@ -29,6 +29,54 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  //preloading images
+  List<Image> loadImages;
+
+  //all assets
+  @override
+  void initState() {
+    super.initState();
+    loadImages = [
+      Image.asset('assets/PNGS/LESSON_1.png'),
+      Image.asset('assets/PNGS/LESSON_2.png'),
+      Image.asset('assets/PNGS/LESSON_3.png'),
+      Image.asset('assets/PNGS/LESSON_4.png'),
+      Image.asset('assets/PNGS/LESSON_5.png'),
+      Image.asset('assets/PNGS/LESSON_6.png'),
+      Image.asset('assets/PNGS/LESSON_7.png'),
+      Image.asset('assets/PNGS/LESSON_1_L.png'),
+      Image.asset('assets/PNGS/LESSON_2_L.png'),
+      Image.asset('assets/PNGS/LESSON_3_L.png'),
+      Image.asset('assets/PNGS/LESSON_4_L.png'),
+      Image.asset('assets/PNGS/LESSON_5_L.png'),
+      Image.asset('assets/PNGS/LESSON_6_L.png'),
+      Image.asset('assets/PNGS/LESSON_7_L.png')
+    ];
+  }
+
+  //put list of images onto cache
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    for (var i = 0; i == loadImages.length; i++) {
+      precacheImage(loadImages[i].image, context);
+    }
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_1.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_2.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_3.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_4.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_5.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_6.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_7.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_1_L.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_2_L.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_3_L.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_4_L.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_5_L.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_6_L.png'), context);
+    // precacheImage(new AssetImage('assets/PNGS/LESSON_7_L.png'), context);
+  }
+
   // sets the state of widget (i.e., when changing tabs)
   int _currentIndex = 1;
   //lists of tabs contents
