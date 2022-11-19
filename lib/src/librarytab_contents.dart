@@ -24,7 +24,7 @@ class _LibraryTabState extends State<LibraryTab> {
         IconButton(
           onPressed: () {
             Navigator.pushNamed(context, '/searchbar');
-            selectedTerm = null;
+            selectedTerm = "";
             resultClear();
           },
           icon: Icon(Icons.search_outlined),
@@ -88,8 +88,8 @@ final sheetTitle = "List of Topics";
 //shows list of lessons in this category
 class CellsCardSheet extends StatefulWidget {
   const CellsCardSheet({
-    Key key,
-    @required this.context,
+    Key? key,
+    required this.context,
   }) : super(key: key);
 
   final BuildContext context;
@@ -128,8 +128,8 @@ class _CellsCardSheetState extends State<CellsCardSheet> {
 //shows list of lessons in this category
 class TissuesCardSheet extends StatefulWidget {
   const TissuesCardSheet({
-    Key key,
-    @required this.context,
+    Key? key,
+    required this.context,
   }) : super(key: key);
   final BuildContext context;
   @override
@@ -167,8 +167,8 @@ class _TissuesCardSheetState extends State<TissuesCardSheet> {
 //shows list of lessons in this category
 class CellCycleCardSheet extends StatefulWidget {
   const CellCycleCardSheet({
-    Key key,
-    @required this.context,
+    Key? key,
+    required this.context,
   }) : super(key: key);
   final BuildContext context;
   @override
@@ -206,8 +206,8 @@ class _CellCycleCardSheetState extends State<CellCycleCardSheet> {
 //shows list of lessons in this category
 class ChromosomalCardSheet extends StatefulWidget {
   const ChromosomalCardSheet({
-    Key key,
-    @required this.context,
+    Key? key,
+    required this.context,
   }) : super(key: key);
   final BuildContext context;
   @override
@@ -245,8 +245,8 @@ class _ChromosomalCardSheetState extends State<ChromosomalCardSheet> {
 //shows list of lessons in this category
 class CellMembraneCardSheet extends StatefulWidget {
   const CellMembraneCardSheet({
-    Key key,
-    @required this.context,
+    Key? key,
+    required this.context,
   }) : super(key: key);
   final BuildContext context;
   @override
@@ -284,8 +284,8 @@ class _CellMembraneCardSheetState extends State<CellMembraneCardSheet> {
 //shows list of lessons in this category
 class MovementMaterialsCardSheet extends StatefulWidget {
   const MovementMaterialsCardSheet({
-    Key key,
-    @required this.context,
+    Key? key,
+    required this.context,
   }) : super(key: key);
   final BuildContext context;
   @override
@@ -325,8 +325,8 @@ class _MovementMaterialsCardSheetState
 //shows list of lessons in this category
 class EnzymesCardSheet extends StatefulWidget {
   const EnzymesCardSheet({
-    Key key,
-    @required this.context,
+    Key? key,
+    required this.context,
   }) : super(key: key);
   final BuildContext context;
   @override

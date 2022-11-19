@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'all_imports.dart';
 
 //Search logic here
@@ -5,13 +7,13 @@ const historyLength = 10;
 //this contains the actual search history
 List<String> _searchHistory = [];
 //this contains the history filtered while typing
-List<String> filteredSearchHistory;
+List<String> filteredSearchHistory = [];
 //displays the results from selected term in search history
-String selectedTerm;
+String selectedTerm = "";
 
 // function that returns a list of filtered results
 List<String> filterSearchTerms({
-  @required String filter,
+  required String filter,
 }) {
   // if the search bar caontains cahracter return filtered results from recent
   if (filter != null && filter.isNotEmpty) {
@@ -37,7 +39,7 @@ void addSearchTerm(String term) {
     _searchHistory.removeRange(0, _searchHistory.length - historyLength);
   }
   // also updates the content in filtered terms
-  filteredSearchHistory = filterSearchTerms(filter: null);
+  filteredSearchHistory = filterSearchTerms(filter: term);
 }
 
 // deletes specific terms from the list by the user or by the ui
@@ -52,10 +54,12 @@ void putSearchTermFirst(String term) {
 }
 
 //controls the search bar
-FloatingSearchBarController controller;
+FloatingSearchBarController controller = FloatingSearchBarController();
 
 class SearchBar extends StatefulWidget {
-  static final route = '/searchbar';
+  static const route = '/searchbar';
+
+  const SearchBar({super.key});
   @override
   _SearchBarState createState() => _SearchBarState();
 }
@@ -68,7 +72,6 @@ class _SearchBarState extends State<SearchBar> {
     // TODO: implement initState
     super.initState();
     controller = FloatingSearchBarController();
-    filteredSearchHistory = filterSearchTerms(filter: null);
   }
 
   // dispose the controller and frees memory when not in use (removes permanently)
@@ -106,7 +109,7 @@ class _SearchBarState extends State<SearchBar> {
         transition: CircularFloatingSearchBarTransition(),
         physics: BouncingScrollPhysics(),
         title: Text(
-          selectedTerm ?? 'Search Here...',
+          selectedTerm,
           style: Theme.of(context).textTheme.headline6,
         ),
         hint: 'Search here...',
@@ -216,7 +219,7 @@ class _BottomSearchStateState extends State<BottomSearchState> {
 
 class SearchResultsListView extends StatelessWidget {
   final String searchTerm;
-  const SearchResultsListView({Key key, @required this.searchTerm})
+  const SearchResultsListView({Key? key, required this.searchTerm})
       : super(key: key);
   @override
   Widget build(BuildContext context) {

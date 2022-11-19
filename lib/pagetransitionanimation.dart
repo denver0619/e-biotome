@@ -3,7 +3,7 @@ import 'all_imports.dart';
 class BouncyPageRoute extends PageRouteBuilder {
   final Widget widget;
 
-  BouncyPageRoute({this.widget})
+  BouncyPageRoute({required this.widget})
       : super(
             transitionDuration: Duration(seconds: 1),
             transitionsBuilder: (BuildContext context, animation,

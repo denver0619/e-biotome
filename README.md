@@ -1,5 +1,7 @@
 # e_biotome
 
+NOTE: Flutter 3.3.8, the navigation route is still not fixed 🥲 aftur sdk update
+
 A new Flutter project.
 
 ## Getting Started

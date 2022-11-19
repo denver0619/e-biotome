@@ -18,7 +18,7 @@ class _HomeTabState extends State<HomeTab> {
         IconButton(
           onPressed: () {
             Navigator.pushNamed(context, '/searchbar');
-            selectedTerm = null;
+            selectedTerm = "";
             resultClear();
           },
           icon: Icon(Icons.search_outlined),

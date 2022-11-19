@@ -1,3 +1,5 @@
+// ignore_for_file: library_private_types_in_public_api, prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'all_imports.dart';
 
@@ -24,13 +26,15 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   //home route
   static String route = '/home';
+
+  const MyHomePage({super.key});
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<MyHomePage> {
   //preloading images
-  List<Image> loadImages;
+  late List<Image> loadImages;
 
   //all assets
   @override

@@ -6,11 +6,11 @@ class CardSheet {
   String title;
   String path;
 
-  CardSheet({this.title, this.path});
+  CardSheet({required this.title, required this.path});
 }
 
 class CellsLesson extends StatefulWidget {
-  const CellsLesson({Key key, this.title}) : super(key: key);
+  const CellsLesson({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   _CellsLessonState createState() => _CellsLessonState();
@@ -77,7 +77,7 @@ class _CellsLessonState extends State<CellsLesson> {
 }
 
 class TissuesLesson extends StatefulWidget {
-  const TissuesLesson({Key key, this.title}) : super(key: key);
+  const TissuesLesson({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   _TissuesLessonState createState() => _TissuesLessonState();
@@ -143,7 +143,7 @@ class _TissuesLessonState extends State<TissuesLesson> {
 }
 
 class CellCycleLesson extends StatefulWidget {
-  const CellCycleLesson({Key key, this.title}) : super(key: key);
+  const CellCycleLesson({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   _CellCycleLessonState createState() => _CellCycleLessonState();
@@ -208,7 +208,7 @@ class _CellCycleLessonState extends State<CellCycleLesson> {
 }
 
 class ChromosomalLesson extends StatefulWidget {
-  const ChromosomalLesson({Key key, this.title}) : super(key: key);
+  const ChromosomalLesson({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   _ChromosomalLessonState createState() => _ChromosomalLessonState();
@@ -271,7 +271,7 @@ class _ChromosomalLessonState extends State<ChromosomalLesson> {
 }
 
 class CellMembraneLesson extends StatefulWidget {
-  const CellMembraneLesson({Key key, this.title}) : super(key: key);
+  const CellMembraneLesson({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   _CellMembraneLessonState createState() => _CellMembraneLessonState();
@@ -335,7 +335,8 @@ class _CellMembraneLessonState extends State<CellMembraneLesson> {
 }
 
 class MovementMaterialsLesson extends StatefulWidget {
-  const MovementMaterialsLesson({Key key, this.title}) : super(key: key);
+  const MovementMaterialsLesson({Key? key, required this.title})
+      : super(key: key);
   final String title;
   @override
   _MovementMaterialsLessonState createState() =>
@@ -406,7 +407,7 @@ class _MovementMaterialsLessonState extends State<MovementMaterialsLesson> {
 }
 
 class EnzymesLesson extends StatefulWidget {
-  const EnzymesLesson({Key key, this.title}) : super(key: key);
+  const EnzymesLesson({Key? key, required this.title}) : super(key: key);
   final String title;
   @override
   _EnzymesLessonState createState() => _EnzymesLessonState();

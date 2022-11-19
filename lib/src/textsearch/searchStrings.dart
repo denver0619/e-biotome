@@ -5,7 +5,8 @@ class StringContent {
   final String tilepath;
   final String tiletitle;
 
-  StringContent({this.source, this.tilepath, this.tiletitle});
+  StringContent(
+      {required this.source, required this.tilepath, required this.tiletitle});
 }
 
 //StringContent(tilepath: '/cells', tiletitle: '', source: ''),
