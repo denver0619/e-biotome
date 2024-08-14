@@ -1,7 +1,6 @@
 //packages
 export 'package:flutter/material.dart';
-export 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
-export 'package:material_floating_search_bar/material_floating_search_bar.dart';
+export 'package:material_floating_search_bar_2/material_floating_search_bar_2.dart';
 //src
 export 'main.dart';
 export 'appnavigation_routes.dart';

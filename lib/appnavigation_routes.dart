@@ -73,6 +73,141 @@ class RoutGenerator {
           return _errorWrongDataType();
         }
         break;
+      case '/cells1':
+        return MaterialPageRoute(builder: (_) {
+          return Cells1();
+        });
+        break;
+      case '/cells2':
+        return MaterialPageRoute(builder: (_) {
+          return Cells2();
+        });
+        break;
+      case '/cells3':
+        return MaterialPageRoute(builder: (_) {
+          return Cells3();
+        });
+        break;
+      case '/cells4':
+        return MaterialPageRoute(builder: (_) {
+          return Cells4();
+        });
+        break;
+      case '/cells5':
+        return MaterialPageRoute(builder: (_) {
+          return Cells5();
+        });
+        break;
+      case '/tissues1':
+        return MaterialPageRoute(builder: (_) {
+          return Tissues1();
+        });
+        break;
+      case '/tissues2':
+        return MaterialPageRoute(builder: (_) {
+          return Tissues2();
+        });
+        break;
+      case '/tissues3':
+        return MaterialPageRoute(builder: (_) {
+          return Tissues3();
+        });
+        break;
+      case '/tissues4':
+        return MaterialPageRoute(builder: (_) {
+          return Tissues4();
+        });
+        break;
+      case '/tissues5':
+        return MaterialPageRoute(builder: (_) {
+          return Tissues5();
+        });
+        break;
+      case '/cellcycle1':
+        return MaterialPageRoute(builder: (_) {
+          return CellCycle1();
+        });
+        break;
+      case '/cellcycle2':
+        return MaterialPageRoute(builder: (_) {
+          return CellCycle2();
+        });
+        break;
+      case '/cellcycle3':
+        return MaterialPageRoute(builder: (_) {
+          return CellCycle3();
+        });
+        break;
+      case '/cellcycle4':
+        return MaterialPageRoute(builder: (_) {
+          return CellCycle4();
+        });
+        break;
+      case '/chromosomal1':
+        return MaterialPageRoute(builder: (_) {
+          return Chromosomal1();
+        });
+        break;
+      case '/chromosomal2':
+        return MaterialPageRoute(builder: (_) {
+          return Chromosomal2();
+        });
+        break;
+      case '/cellmembrane1':
+        return MaterialPageRoute(builder: (_) {
+          return CellMembrane1();
+        });
+        break;
+      case '/cellmembrane2':
+        return MaterialPageRoute(builder: (_) {
+          return CellMembrane2();
+        });
+        break;
+      case '/cellmembrane3':
+        return MaterialPageRoute(builder: (_) {
+          return CellMembrane3();
+        });
+        break;
+      case '/movementmaterials1':
+        return MaterialPageRoute(builder: (_) {
+          return MovementMaterials1();
+        });
+        break;
+      case '/movementmaterials2':
+        return MaterialPageRoute(builder: (_) {
+          return MovementMaterials2();
+        });
+        break;
+      case '/movementmaterials3':
+        return MaterialPageRoute(builder: (_) {
+          return MovementMaterials3();
+        });
+        break;
+      case '/movementmaterials4':
+        return MaterialPageRoute(builder: (_) {
+          return MovementMaterials4();
+        });
+        break;
+      case '/movementmaterials5':
+        return MaterialPageRoute(builder: (_) {
+          return MovementMaterials5();
+        });
+        break;
+      case '/enzymes1':
+        return MaterialPageRoute(builder: (_) {
+          return Enzymes1();
+        });
+        break;
+      case '/enzymes2':
+        return MaterialPageRoute(builder: (_) {
+          return Enzymes2();
+        });
+        break;
+      case '/enzymes3':
+        return MaterialPageRoute(builder: (_) {
+          return Enzymes3();
+        });
+        break;
       default:
         return _errorRoute();
     }

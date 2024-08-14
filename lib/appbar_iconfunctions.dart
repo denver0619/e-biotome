@@ -56,10 +56,10 @@ void putSearchTermFirst(String term) {
 //controls the search bar
 FloatingSearchBarController controller = FloatingSearchBarController();
 
-class SearchBar extends StatefulWidget {
+class SearchBarComponent extends StatefulWidget {
   static const route = '/searchbar';
 
-  const SearchBar({super.key});
+  const SearchBarComponent({super.key});
   @override
   _SearchBarState createState() => _SearchBarState();
 }
@@ -110,7 +110,8 @@ class _SearchBarState extends State<SearchBar> {
         physics: BouncingScrollPhysics(),
         title: Text(
           selectedTerm,
-          style: Theme.of(context).textTheme.headline6,
+          // style: Theme.of(context).textTheme.headline6,
+          style: Theme.of(context).textTheme.headlineSmall,
         ),
         hint: 'Search here...',
         actions: [
@@ -168,7 +169,7 @@ class _BottomSearchStateState extends State<BottomSearchState> {
               'Start Searching',
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: Theme.of(context).textTheme.caption,
+              style: Theme.of(context).textTheme.labelSmall,
             ),
           );
         } else if (filteredSearchHistory.isEmpty) {
